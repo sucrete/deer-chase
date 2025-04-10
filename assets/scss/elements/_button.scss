@@ -103,7 +103,7 @@
       left: 0%;
       width: 200px;
       height: 200px;
-      background-color: #fff;
+      background-color: #005a1b;
       border-color: transparent;
       border-radius: 50%;
       transform: translate(-10px, -70px) scale(0.1);
@@ -113,7 +113,7 @@
     }
 
     &:hover {
-      color: var(--color-primary);
+      color: white;
       // border: 1px solid transparent;
 
       ::before {
@@ -127,8 +127,8 @@
 
       svg {
         path {
-          fill: var(--color-primary) !important;
-          stroke: var(--color-primary);
+          fill: white !important;
+          stroke: white;
         }
       }
     }

@@ -24,7 +24,7 @@ export class CTA extends LitElement {
                     class="rts-btn btn-primary cta-button no-underline"
                     
                   >
-                    Book tee time
+                    Book Tee Time
                     <img
                       class="injectable"
                       src="assets/images/service/icons/13.svg"

@@ -16,7 +16,38 @@
         color: #000000;
         font-size: 17px;
         font-family: "Aeonik Medium";
+        position: relative;
         // -webkit-text-stroke: 1px;
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 3.25rem;
+          content: "";
+          display: block;
+          height: 1.5px;
+          left: 50%;
+          position: absolute;
+          background: var(--color-primary);
+          transition: width 0.3s ease 0s, left 0.3s ease 0s,
+            opacity 0.3s ease 0s;
+          width: 0;
+          opacity: 0;
+        }
+        &:hover {
+          color: var(--color-primary);
+          &:after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+          }
+        }
+        &.active {
+          color: var(--color-primary);
+          &:after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+          }
+        }
       }
     }
   }
@@ -25,6 +56,23 @@
 .header--sticky.sticky {
   .nav-area ul li > a.nav-link {
     padding: 20px 0;
+  }
+}
+.header--sticky.header-area-four {
+  &:not(.home) {
+    .header-four-wrapper {
+      .nav-area {
+        nav {
+          .parent-nav {
+            .nav-link {
+              &:after {
+                background: white;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -41,9 +89,10 @@
       &::before {
         top: -11px;
         font-size: 11px;
-        right: -16px;
+        right: -14px;
         transition: 0.25s ease;
         transform-origin: center;
+        -webkit-text-stroke: .75px;
       }
     }
   }

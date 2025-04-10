@@ -12591,10 +12591,44 @@ Copyright (c) 2015 Daniel Eden
   color: #000000;
   font-size: 17px;
   font-family: "Aeonik Medium";
+  position: relative;
+}
+.nav-area ul li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.25rem;
+  content: "";
+  display: block;
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-primary);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+  opacity: 0;
+}
+.nav-area ul li a:hover {
+  color: var(--color-primary);
+}
+.nav-area ul li a:hover:after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+}
+.nav-area ul li a.active {
+  color: var(--color-primary);
+}
+.nav-area ul li a.active:after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
 }
 
 .header--sticky.sticky .nav-area ul li > a.nav-link {
   padding: 20px 0;
+}
+
+.header--sticky.header-area-four:not(.home) .header-four-wrapper .nav-area nav .parent-nav .nav-link:after {
+  background: white;
 }
 
 .has-dropdown a {
@@ -12607,9 +12641,10 @@ Copyright (c) 2015 Daniel Eden
 .has-dropdown a i::before {
   top: -11px;
   font-size: 11px;
-  right: -16px;
+  right: -14px;
   transition: 0.25s ease;
   transform-origin: center;
+  -webkit-text-stroke: 0.75px;
 }
 .has-dropdown:hover > a i::before {
   transform: rotate(180deg);
@@ -12969,7 +13004,7 @@ li.has-dropdown:hover .submenu li a {
   left: 0%;
   width: 200px;
   height: 200px;
-  background-color: #fff;
+  background-color: #005a1b;
   border-color: transparent;
   border-radius: 50%;
   transform: translate(-10px, -70px) scale(0.1);
@@ -12978,7 +13013,7 @@ li.has-dropdown:hover .submenu li a {
   transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
 .rts-btn.btn-primary:hover {
-  color: var(--color-primary);
+  color: white;
 }
 .rts-btn.btn-primary:hover ::before {
   opacity: 0;
@@ -12988,8 +13023,8 @@ li.has-dropdown:hover .submenu li a {
   transform: scaleX(1.5) scaleY(1.5);
 }
 .rts-btn.btn-primary:hover svg path {
-  fill: var(--color-primary) !important;
-  stroke: var(--color-primary);
+  fill: white !important;
+  stroke: white;
 }
 .rts-btn.btn-primary.with-light-border {
   border: 1px solid transparent;
@@ -13450,7 +13485,9 @@ li.has-dropdown:hover .submenu li a {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.29) 0%, hsla(0, 0%, 0%, 0.288) 8.1%, hsla(0, 0%, 0%, 0.283) 15.5%, hsla(0, 0%, 0%, 0.274) 22.5%, hsla(0, 0%, 0%, 0.264) 29%, hsla(0, 0%, 0%, 0.251) 35.3%, hsla(0, 0%, 0%, 0.237) 41.2%, hsla(0, 0%, 0%, 0.222) 47.1%, hsla(0, 0%, 0%, 0.208) 52.9%, hsla(0, 0%, 0%, 0.193) 58.8%, hsla(0, 0%, 0%, 0.179) 64.7%, hsla(0, 0%, 0%, 0.166) 71%, hsla(0, 0%, 0%, 0.156) 77.5%, hsla(0, 0%, 0%, 0.147) 84.5%, hsla(0, 0%, 0%, 0.142) 91.9%, hsla(0, 0%, 0%, 0.14) 100%);
+  bottom: 0;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.013) 8.1%, hsla(0, 0%, 0%, 0.049) 15.5%, hsla(0, 0%, 0%, 0.104) 22.5%, hsla(0, 0%, 0%, 0.175) 29%, hsla(0, 0%, 0%, 0.259) 35.3%, hsla(0, 0%, 0%, 0.352) 41.2%, hsla(0, 0%, 0%, 0.45) 47.1%, hsla(0, 0%, 0%, 0.55) 52.9%, hsla(0, 0%, 0%, 0.648) 58.8%, hsla(0, 0%, 0%, 0.741) 64.7%, hsla(0, 0%, 0%, 0.825) 71%, hsla(0, 0%, 0%, 0.896) 77.5%, hsla(0, 0%, 0%, 0.951) 84.5%, hsla(0, 0%, 0%, 0.987) 91.9%, hsl(0, 0%, 0%) 100%);
+  opacity: 0.6;
   z-index: 1;
 }
 .banner-four-area .banner-four-wrapper .inner-left {
@@ -13482,6 +13519,9 @@ li.has-dropdown:hover .submenu li a {
   .banner-four-area .banner-four-wrapper p.disc {
     font-size: 18px;
   }
+}
+.banner-four-area.home-page .overlay {
+  height: 50%;
 }
 
 .banner-subpage {
@@ -17583,7 +17623,7 @@ section.cta.blonde .rts-cts-area {
   color: white;
 }
 .rts-btn.btn-primary.cta-button:hover {
-  color: var(--color-primary);
+  color: white;
 }
 .rts-btn.btn-primary svg {
   max-width: 24px;
@@ -17593,7 +17633,7 @@ section.cta.blonde .rts-cts-area {
   transition: stroke 0.3s ease;
 }
 .rts-btn.btn-primary:hover svg path {
-  stroke: var(--color-offset) !important;
+  stroke: white !important;
 }
 
 .service-area-details-wrapper .inner-content {
@@ -20405,7 +20445,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   padding-right: 10px !important;
   padding-left: 15px !important;
   border: none !important;
-  margin-left: 14px;
+  margin-left: 15px;
 }
 .my-btn svg {
   margin-bottom: -2px;
@@ -20415,10 +20455,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   stroke: white !important;
 }
 .my-btn:hover {
-  color: var(--color-offset) !important;
+  color: white !important;
 }
 .my-btn:hover svg path {
-  stroke: green !important;
+  fill: white;
+  stroke: white !important;
 }
 
 .notices {
@@ -20476,9 +20517,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   align-items: center;
 }
 .slider-wrapper .slider .slide .title-wrapper img {
-  width: 50px;
+  width: 333px;
   height: auto;
-  margin: 0 70px 0 80px;
+  margin: 0 40px 0 47px;
 }
 .slider-wrapper .slider .slide .title-wrapper h2 {
   font-size: 70px;
@@ -20722,10 +20763,10 @@ a .single-solution-style-one:hover .bottom .card-subheading .arrow path {
 }
 
 .deer-chase-logo-badge {
-  width: 140px;
+  width: 120px;
   height: auto;
   margin-top: 10px;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.02)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.03)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.04)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.05)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.06)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.07));
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.01)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.02)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.05)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.06));
 }
 .deer-chase-logo-badge path {
   fill: white;
@@ -20748,12 +20789,20 @@ header.header--sticky.sticky .deer-chase-logo-badge {
 header.header--sticky.sticky .deer-chase-logo-roman {
   display: unset;
 }
+header.header--sticky.sticky .nav-area ul li a:not(.my-btn):after {
+  bottom: 1.5rem;
+  background: white;
+}
 
 header.header-area-four.header--sticky:not(.sticky).subpage .container .row .header-four-wrapper .logo .deer-chase-logo-roman path {
   fill: var(--color-primary);
 }
 header.header-area-four.header--sticky:not(.sticky).subpage .container .row .header-four-wrapper .button-area-right-header .menu-btn-toggle svg rect {
   fill: var(--color-primary);
+}
+
+header.header--sticky:not(.sticky).home .container .row .header-four-wrapper .nav-area ul li > a.nav-link {
+  color: var(--color-primary);
 }
 
 @media (max-width: 992px) {
@@ -21691,15 +21740,13 @@ footer .container .row .logo-column div:not(.that-group) {
 footer .container .row .logo-column div:not(.that-group) .logo-brick {
   display: flex;
   flex-direction: row;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   align-items: center;
 }
-footer .container .row .logo-column div:not(.that-group) .logo-brick .logo-col {
-  padding-bottom: 1rem;
-}
 footer .container .row .logo-column div:not(.that-group) .logo-brick .logo-col .footer-logo {
-  width: 160px;
+  width: 140px;
   height: auto;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.11)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.13)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.14)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.15));
 }
 footer .container .row .logo-column div:not(.that-group) .footer-form {
   padding-bottom: 3rem;
@@ -21759,22 +21806,25 @@ footer .container .row .logo-column div:not(.that-group) .link-group .contact-st
 footer .container .row .logo-column div:not(.that-group) .link-group .contact-stack .link:hover {
   color: rgba(255, 255, 255, 0.65);
 }
-footer .container .row .logo-column div:not(.that-group) .link-group .facebook-link {
-  position: relative;
-  top: -2px;
-  padding-left: 3.25rem;
+footer .container .row .logo-column div:not(.that-group) .link-group .social-stack {
+  padding-left: 3rem;
 }
-footer .container .row .logo-column div:not(.that-group) .link-group .facebook-link .facebook-logo {
-  width: 85px;
+footer .container .row .logo-column div:not(.that-group) .link-group .social-stack .social-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  line-height: 145%;
+}
+footer .container .row .logo-column div:not(.that-group) .link-group .social-stack .social-link img {
+  width: 20px;
   height: auto;
-  overflow: visible;
+  margin-right: 15px;
+  margin-top: -1.5px;
 }
-footer .container .row .logo-column div:not(.that-group) .link-group .facebook-link .facebook-logo path {
-  fill: var(--color-accent);
-  transition: all 0.25s ease;
+footer .container .row .logo-column div:not(.that-group) .link-group .social-stack .social-link:hover {
+  color: rgba(255, 255, 255, 0.65);
 }
-footer .container .row .logo-column div:not(.that-group) .link-group .facebook-link:hover .facebook-logo path {
-  fill: #0766ff;
+footer .container .row .logo-column div:not(.that-group) .link-group .social-stack .social-link:not(:first-of-type) {
+  margin-top: 1rem;
 }
 footer .weather-card {
   padding: 7rem;

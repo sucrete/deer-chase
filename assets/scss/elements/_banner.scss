@@ -443,26 +443,27 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    bottom: 0;
     background-image: linear-gradient(
-      to top,
-      hsla(0, 0%, 0%, 0.29) 0%,
-      hsla(0, 0%, 0%, 0.288) 8.1%,
-      hsla(0, 0%, 0%, 0.283) 15.5%,
-      hsla(0, 0%, 0%, 0.274) 22.5%,
-      hsla(0, 0%, 0%, 0.264) 29%,
-      hsla(0, 0%, 0%, 0.251) 35.3%,
-      hsla(0, 0%, 0%, 0.237) 41.2%,
-      hsla(0, 0%, 0%, 0.222) 47.1%,
-      hsla(0, 0%, 0%, 0.208) 52.9%,
-      hsla(0, 0%, 0%, 0.193) 58.8%,
-      hsla(0, 0%, 0%, 0.179) 64.7%,
-      hsla(0, 0%, 0%, 0.166) 71%,
-      hsla(0, 0%, 0%, 0.156) 77.5%,
-      hsla(0, 0%, 0%, 0.147) 84.5%,
-      hsla(0, 0%, 0%, 0.142) 91.9%,
-      hsla(0, 0%, 0%, 0.14) 100%
+      to bottom,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.013) 8.1%,
+      hsla(0, 0%, 0%, 0.049) 15.5%,
+      hsla(0, 0%, 0%, 0.104) 22.5%,
+      hsla(0, 0%, 0%, 0.175) 29%,
+      hsla(0, 0%, 0%, 0.259) 35.3%,
+      hsla(0, 0%, 0%, 0.352) 41.2%,
+      hsla(0, 0%, 0%, 0.45) 47.1%,
+      hsla(0, 0%, 0%, 0.55) 52.9%,
+      hsla(0, 0%, 0%, 0.648) 58.8%,
+      hsla(0, 0%, 0%, 0.741) 64.7%,
+      hsla(0, 0%, 0%, 0.825) 71%,
+      hsla(0, 0%, 0%, 0.896) 77.5%,
+      hsla(0, 0%, 0%, 0.951) 84.5%,
+      hsla(0, 0%, 0%, 0.987) 91.9%,
+      hsl(0, 0%, 0%) 100%
     );
-
+    opacity: 0.6;
     z-index: 1;
   }
   .banner-four-wrapper {
@@ -494,6 +495,11 @@
       @media #{$sm-layout} {
         font-size: 18px;
       }
+    }
+  }
+  &.home-page {
+    .overlay {
+      height: 50%;
     }
   }
 }
@@ -577,8 +583,6 @@ $starker-gradient: linear-gradient(
   hsla(0, 0%, 0%, 0.32) 100%
 );
 
-
-
 $subpage-height: 550px;
 .banner-subpage {
   height: $subpage-height;
@@ -615,7 +619,7 @@ $subpage-height: 550px;
       hsla(0, 0%, 0%, 0.14) 100%
     );
   }
-
+  
   &.book-tee-time-banner {
     background-image: url(../images/player-in-view.jpg);
     .overlay {
