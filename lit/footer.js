@@ -80,27 +80,33 @@ export class Footer extends LitElement {
                         class="social-link link"
                         target="_blank"
                       >
-                        <img
-                          src="./assets/images/icons/facebook-logo.svg"
-                          alt=""
-                        />
+                        <img src="./assets/images/icons/facebook.svg" alt="" />
                         Facebook
                       </a>
-                      <!-- <a
-                        href="https://www.instagram.com/stagghill_gc/"
+                      <a
+                        href="https://www.instagram.com/thegolfclubatdeerchase1/"
                         class="social-link link"
                         target="_blank"
                       >
-                        <img
-                          src="./assets/images/icons/instagram-logo.svg"
-                          alt=""
-                        />
+                        <img src="./assets/images/icons/instagram.svg" alt="" />
                         Instagram
-                      </a> -->
-                      <!-- <a href="https://x.com/stagghillgolf" class="social-link link" target="_blank">
-                        <img src="./assets/images/icons/x-logo.svg" alt="" />
-                        X
-                      </a> -->
+                      </a>
+                      <a
+                        href="https://www.pinterest.com/thegolfclubatde/"
+                        class="social-link link"
+                        target="_blank"
+                      >
+                        <img src="./assets/images/icons/pinterest.svg" alt="" />
+                        Pinterest
+                      </a>
+                      <a
+                        href="https://www.tripadvisor.com/Attraction_Review-g44606-d4460120-Reviews-The_Golf_Club_at_Deer_Chase-Linn_Creek_Lake_of_the_Ozarks_Missouri.html"
+                        class="social-link link"
+                        target="_blank"
+                      >
+                        <img src="./assets/images/icons/trip-advisor.svg" alt="" />
+                        Trip Advisor
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -115,7 +121,7 @@ export class Footer extends LitElement {
                       <span class="grey-text">
                         <span class="hyphen">-</span>
                         <br class="break" />
-                        Kearney, MO</span
+                        Linn Creek, MO</span
                       >
                     </div>
                     <!--~ Top Row -->
@@ -226,7 +232,7 @@ export class Footer extends LitElement {
                   <div class="copyright-wrapper">
                     <div class="new-row">
                       <p>
-                        © The Golf Course at MariMack
+                        © The Golf Club at Deer Chase
                         ${new Date().getFullYear()}
                       </p>
                     </div>

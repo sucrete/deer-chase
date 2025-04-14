@@ -463,7 +463,6 @@
       hsla(0, 0%, 0%, 0.987) 91.9%,
       hsl(0, 0%, 0%) 100%
     );
-    opacity: 0.6;
     z-index: 1;
   }
   .banner-four-wrapper {
@@ -498,8 +497,14 @@
     }
   }
   &.home-page {
+    .container {
+      z-index: unset;
+      margin-bottom:3rem
+    }
     .overlay {
       height: 50%;
+      z-index:2;
+      opacity: 0.7;
     }
   }
 }

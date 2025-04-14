@@ -287,8 +287,7 @@ section.hours-table {
   color: white;
   padding: 3rem;
   max-width: 500px;
-  font-size: 19px;
-  line-height: 150%;
+
   position: relative;
   z-index: 6;
 
@@ -313,6 +312,71 @@ section.hours-table {
       100% 100% / var(--_p);
 }
 
+//* short introduction element in home page banner
+.short-introduction {
+  max-width: 500px;
+  position: relative;
+  z-index: 33;
+  p {
+    color: white;
+    font-size: 19px;
+    line-height: 150%;
+    margin-bottom: 2rem;
+  }
+  .trip-advisor-bite {
+    background: hsla(0, 0%, 100%, 0.698);
+    border: 1px solid rgba(255, 255, 255, 0.261);
+    padding: 1.25rem 1rem 0.75rem 1.5rem;
+    max-width: 250px;
+    width: 200px;
+    height: fit-content;
+    position: relative;
+    border-radius: 1px;
+    // overflow: hidden;
+    backdrop-filter: blur(4px);
+    .ta-subheading {
+      font-family: "Sono", monospace;
+      font-optical-sizing: auto;
+      font-weight: 450;
+      /* font-style: normal; */
+      font-variation-settings: "MONO" 1;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      line-height: 120%;
+      margin-left: 1px;
+      color: #848484;
+      text-transform: uppercase;
+      padding-bottom: 0.15rem;
+      position: relative;
+      z-index: 3;
+    }
+    .trip-advisor-logo {
+      height: 25px;
+      width: auto;
+      position: relative;
+      z-index: 2;
+    }
+    .svg-wrap {
+      display: inline-block;
+      padding: 3px;
+      // background: rgba(255, 255, 255, 0.266);
+      border-radius: 99px;
+      width: fit-content;
+      height: 22px;
+      .wiki-wawa {
+        position: relative;
+        height: 14px;
+        width: auto;
+        top: -6px;
+        path {
+          fill: #00a668;
+        }
+      }
+    }
+    
+  }
+  
+}
 //* pdf card
 a {
   .single-solution-style-one {
@@ -501,31 +565,29 @@ header {
           }
         }
       }
-      
     }
   }
 }
 
 //* sets nav link color: on home page
 header {
-    &.header--sticky:not(.sticky) {
-      &.home {
-        .container {
-          .row {
-            .header-four-wrapper {
-             .nav-area {
+  &.header--sticky:not(.sticky) {
+    &.home {
+      .container {
+        .row {
+          .header-four-wrapper {
+            .nav-area {
               ul {
                 li {
                   & > a.nav-link {
-                    color: var(--color-primary)
+                    color: var(--color-primary);
                   }
                 }
               }
-             }
             }
           }
         }
-      
+      }
     }
   }
 }
@@ -1646,12 +1708,12 @@ footer {
               .footer-logo {
                 width: 140px;
                 height: auto;
-                filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1))
-                drop-shadow(0 2px 2px rgba(0,0,0,0.11))
-                drop-shadow(0 4px 4px rgba(0,0,0,0.12))
-                drop-shadow(0 8px 8px rgba(0,0,0,0.13))
-                drop-shadow(0 16px 16px rgba(0,0,0,0.14))
-                drop-shadow(0 32px 32px rgba(0,0,0,0.15));
+                filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1))
+                  drop-shadow(0 2px 2px rgba(0, 0, 0, 0.11))
+                  drop-shadow(0 4px 4px rgba(0, 0, 0, 0.12))
+                  drop-shadow(0 8px 8px rgba(0, 0, 0, 0.13))
+                  drop-shadow(0 16px 16px rgba(0, 0, 0, 0.14))
+                  drop-shadow(0 32px 32px rgba(0, 0, 0, 0.15));
               }
             }
           }
