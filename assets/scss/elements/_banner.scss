@@ -499,7 +499,7 @@
   &.home-page {
     .container {
       z-index: unset;
-      margin-bottom:3rem
+      margin-bottom:1rem
     }
     .overlay {
       height: 50%;
@@ -660,7 +660,7 @@ $subpage-height: 550px;
     }
   }
   &.membership-banner {
-    background-image: url(../images/marimack-aerial-2.jpg);
+    background-image: url(../images/player-in-view.jpg);
     .overlay {
       background-image: $to-transparent-bg-gradient;
     }
