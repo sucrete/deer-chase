@@ -125,15 +125,14 @@
           letter-spacing: -4px;
           color: white;
           margin-bottom: 0px;
-          .italicized {
-            font-family: "IKOB Italic";
-          }
         }
       }
     }
   }
 }
-
+.italicized {
+  font-family: "IKOB Italic";
+}
 // locating the blocky shape at bottom of home page
 .banner-four-area {
   .shape {
@@ -326,7 +325,12 @@ section.hours-table {
     text-shadow: 0 0 8px black;
   }
   a {
+    position: relative;
     text-decoration-color: #6b6b6b;
+    width: fit-content;
+    display: inline-block;
+    margin-left: 9px;
+    transition: all 0.15s ease;
     .trip-advisor-bite {
       background: hsla(0, 0%, 100%, 0.716);
       border: 1px solid rgba(255, 255, 255, 0.261);
@@ -336,7 +340,6 @@ section.hours-table {
       height: fit-content;
       position: relative;
       border-radius: 1px;
-      // overflow: hidden;
       backdrop-filter: blur(9px);
       .ta-subheading {
         font-family: "Sono", monospace;
@@ -347,7 +350,7 @@ section.hours-table {
         font-size: 12px;
         letter-spacing: 0.5px;
         line-height: 120%;
-        margin-left: 1px;
+        margin-left: 2px;
         color: #6b6b6b;
         text-transform: uppercase;
         padding-bottom: 0.15rem;
@@ -382,10 +385,11 @@ section.hours-table {
       text-decoration-color: #6b6b6b;
     }
     &:hover {
+      transform: translateY(-3px);
       .col-two {
-        .little-right-arrow {
-          transform: rotate(-45deg) translateX(2.5px);
-        }
+        // .little-right-arrow {
+        //   transform: rotate(-45deg) translateX(2.5px);
+        // }
       }
       box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px,
         rgba(0, 0, 0, 0.65) 0px 8px 16px -8px;
@@ -988,8 +992,6 @@ table {
 }
 // section on clubhouse rental
 
-
-
 //~ Membership
 section.perks {
   padding-top: 20rem;
@@ -1045,7 +1047,7 @@ section.perks {
           text-align: center;
           font-size: 70px;
         }
-        
+
         .tab-content {
           padding-top: 2rem;
           hr {
@@ -1057,7 +1059,7 @@ section.perks {
           h3 {
             font-size: 48px;
             position: relative;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             // left: 9px;
           }
           p {
@@ -1086,13 +1088,13 @@ section {
       .inner-container {
         padding-left: 5rem;
         border-left: 1.5px solid #e7e7e7;
-         h3 {
+        h3 {
           font-family: "Aeonik";
           color: #6c6c6c;
           margin-bottom: 20px;
           font-size: 26px;
-         }
-         ul {
+        }
+        ul {
           padding-left: 2rem;
           margin-top: 10px;
           li {
@@ -1106,10 +1108,9 @@ section {
           &:first-of-type {
             padding-bottom: 2rem;
           }
-         }
+        }
       }
     }
-    
   }
 }
 
@@ -1241,7 +1242,6 @@ section {
     padding-bottom: 2rem;
   }
 }
-
 //scorecard section
 section {
   &.scorecard {
@@ -1260,6 +1260,102 @@ section {
   }
 }
 
+section {
+  &.weddings-page-body {
+    padding: 12rem 0;
+    background-image: url("../assets/images/svgs/pretty-pretty-princess-pattern.svg");
+    position: relative;
+    .container {
+      position: relative;
+      z-index: 77;
+      .row {
+        [class*="col"] {
+          .slyder-container {
+            height: 500px;
+            .slyde {
+              min-width: 650px;
+              &.square {
+                min-width: 400px;
+              }
+            }
+            .reload-button {
+              border: 7px solid rgb(249, 248, 246);
+            }
+          }
+        }
+        .col-one {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .center-me {
+            h2 {
+              letter-spacing: -1px;
+            }
+            p {
+              font-size: 19px;
+            }
+          }
+        }
+      }
+    }
+    .weddings-section-overlay,
+    .gradient-mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      // ellipse <width> <height> at <position>
+      // ellipse 100% 20% at 60%
+      background: radial-gradient(
+        ellipse 60% 70% at 65%,
+        transparent 35%,
+        rgb(250, 250, 246) 70%
+      );
+    }
+    .weddings-section-overlay {
+      background: rgba(250, 250, 246, 0.505);
+    }
+  }
+}
+section.weddings-form-section {
+  padding: 5rem 0 14rem 0;
+  background-color: #fafaf6;
+  .container {
+    background-color: #eeede4;
+    padding: 5rem;
+    .row {
+      [class*="col"] {
+        h3 {
+          font-family: "Aeonik";
+        }
+        form {
+          label{
+            padding-bottom: 5px;
+            color: var(--color-primary)
+          }
+          input,
+          textarea {
+            background: white;
+            border: none;
+            min-height: 40px;
+          }
+          button {
+            margin-top: 2rem;
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+        }
+        img {
+          display: block;
+          width: 100%;
+          object-fit: contain;
+          height: auto;
+        }
+      }
+    }
+  }
+}
 
 //* ===================================================
 //* =================== LAYOUT ========================
@@ -1325,7 +1421,7 @@ footer {
                 &:active,
                 &:focus,
                 &:hover {
-                  border: 1px solid white;
+                  border: 1px solid #005a1b;
                 }
               }
               button {

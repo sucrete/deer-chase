@@ -22,7 +22,10 @@ export class Header extends LitElement {
                     </li>
 
                     <li>
-                      <a class="nav-link" href="weddings-and-receptions.html">Weddings & Receptions</a>
+                      <a class="nav-link" href="weddings.html">Weddings</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="course.html">Course</a>
                     </li>
                   </ul>
                 </nav>
