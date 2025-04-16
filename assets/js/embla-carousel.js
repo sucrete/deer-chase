@@ -1,26 +1,35 @@
-// import EmblaCarousel from './vendor/embla.js'
-import { addPrevNextBtnsClickHandlers } from './plugins/embla-carousel-arrow-buttons.js'
-import { addDotBtnsAndClickHandlers } from './plugins/embla-carousel-dot-button.js'
+
+import {
+  addThumbBtnsClickHandlers,
+  addToggleThumbBtnsActive
+} from './plugins/embla-carousel-thumbnail-buttons.js'
 
 const OPTIONS = {}
+const OPTIONS_THUMBS = {
+  containScroll: 'keepSnaps',
+  dragFree: true
+}
 
-const emblaNode = document.querySelector('.embla')
-const viewportNode = emblaNode.querySelector('.embla__viewport')
-const prevBtnNode = emblaNode.querySelector('.embla__button--prev')
-const nextBtnNode = emblaNode.querySelector('.embla__button--next')
-const dotsNode = emblaNode.querySelector('.embla__dots')
-
-const emblaApi = EmblaCarousel(viewportNode, OPTIONS)
-
-const removePrevNextBtnsClickHandlers = addPrevNextBtnsClickHandlers(
-  emblaApi,
-  prevBtnNode,
-  nextBtnNode
+const viewportNodeMainCarousel = document.querySelector('.embla__viewport')
+const viewportNodeThumbCarousel = document.querySelector(
+  '.embla-thumbs__viewport'
 )
-const removeDotBtnsAndClickHandlers = addDotBtnsAndClickHandlers(
-  emblaApi,
-  dotsNode
+const emblaApiMain = EmblaCarousel(viewportNodeMainCarousel, OPTIONS)
+const emblaApiThumb = EmblaCarousel(viewportNodeThumbCarousel, OPTIONS_THUMBS)
+
+const removeThumbBtnsClickHandlers = addThumbBtnsClickHandlers(
+  emblaApiMain,
+  emblaApiThumb
+)
+const removeToggleThumbBtnsActive = addToggleThumbBtnsActive(
+  emblaApiMain,
+  emblaApiThumb
 )
 
-emblaApi.on('destroy', removePrevNextBtnsClickHandlers)
-emblaApi.on('destroy', removeDotBtnsAndClickHandlers)
+emblaApiMain
+  .on('destroy', removeThumbBtnsClickHandlers)
+  .on('destroy', removeToggleThumbBtnsActive)
+
+emblaApiThumb
+  .on('destroy', removeThumbBtnsClickHandlers)
+  .on('destroy', removeToggleThumbBtnsActive)

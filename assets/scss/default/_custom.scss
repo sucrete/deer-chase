@@ -1280,6 +1280,20 @@ section {
             }
             .reload-button {
               border: 7px solid rgb(249, 248, 246);
+              color: #818181;
+              svg {
+                path {
+                  fill: #818181;
+                }
+              }
+              &:hover {
+                color: #5d5d5d;
+                svg {
+                  path {
+                    fill: #5d5d5d;
+                  }
+                }
+              }
             }
           }
         }
@@ -1355,6 +1369,14 @@ section.weddings-form-section {
         }
       }
     }
+  }
+}
+
+//~ Course
+section {
+  &.course-page-body {
+    padding: 12rem 0;
+    background-color: #f4f4f4;
   }
 }
 

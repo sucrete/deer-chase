@@ -10,7 +10,7 @@
   padding: 0.75rem 1.65rem;
   letter-spacing: 1px;
   text-transform: capitalize;
-  transition: color 1s ease;
+  transition: color .2s ease;
   cursor: pointer;
   appearance: none;
   position: absolute;
@@ -23,7 +23,7 @@
   .reload-icon {
     width: 17px;
     path {
-      transition: fill 1s ease;
+      transition: fill .2s ease;
       fill: #bebebe;
     }
   }
