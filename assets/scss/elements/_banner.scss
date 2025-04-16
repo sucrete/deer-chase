@@ -686,6 +686,15 @@ $subpage-height: 550px;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
     }
   }
+  &.course-banner {
+    background-image: url(../images/deer-chase-on-green.jpg);
+    .overlay {
+      background-image: $to-transparent-bg-gradient;
+    }
+    .title {
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.138);
+    }
+  }
 
   @media #{$sm-layout} {
     height: $subpage-height;
