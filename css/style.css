@@ -13559,10 +13559,10 @@ li.has-dropdown:hover .submenu li a {
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
 }
 .banner-subpage.events-banner {
-  background-image: url(../images/marimack-bunch-of-carts.jpg);
+  background-image: url(../images/caravan-of-carts.jpg);
 }
 .banner-subpage.events-banner .overlay {
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.72) 0%, hsla(0, 0%, 0%, 0.585) 4.2%, hsla(0, 0%, 0%, 0.469) 7.4%, hsla(0, 0%, 0%, 0.369) 10%, hsla(0, 0%, 0%, 0.284) 12.2%, hsla(0, 0%, 0%, 0.213) 14.4%, hsla(0, 0%, 0%, 0.156) 16.8%, hsla(0, 0%, 0%, 0.109) 19.7%, hsla(0, 0%, 0%, 0.073) 23.5%, hsla(0, 0%, 0%, 0.046) 28.5%, hsla(0, 0%, 0%, 0.027) 35%, hsla(0, 0%, 0%, 0.014) 43.2%, hsla(0, 0%, 0%, 0.006) 53.5%, hsla(0, 0%, 0%, 0.002) 66.2%, hsla(0, 0%, 0%, 0) 81.6%, hsla(0, 0%, 0%, 0) 100%);
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.4) 0%, hsla(0, 0%, 0%, 0.397) 4.6%, hsla(0, 0%, 0%, 0.387) 8.4%, hsla(0, 0%, 0%, 0.373) 11.7%, hsla(0, 0%, 0%, 0.354) 14.8%, hsla(0, 0%, 0%, 0.333) 17.9%, hsla(0, 0%, 0%, 0.308) 21.2%, hsla(0, 0%, 0%, 0.283) 25%, hsla(0, 0%, 0%, 0.257) 29.5%, hsla(0, 0%, 0%, 0.232) 34.8%, hsla(0, 0%, 0%, 0.207) 41.4%, hsla(0, 0%, 0%, 0.186) 49.4%, hsla(0, 0%, 0%, 0.167) 59%, hsla(0, 0%, 0%, 0.153) 70.5%, hsla(0, 0%, 0%, 0.143) 84.1%, hsla(0, 0%, 0%, 0.14) 100%);
 }
 .banner-subpage.online-store-banner {
   background-image: url(../images/marimack-bunch-of-carts-2.jpg);
@@ -20504,47 +20504,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(1).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(2) {
-  z-index: 9;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(2).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(3) {
-  z-index: 8;
   transform: rotate(0deg) translate(-50%, -50%);
 }
-.slyde:nth-child(3).leave {
+.slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20559,30 +20521,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
-.slyde:nth-child(4) {
-  z-index: 7;
-  transform: rotate(2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(4).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(5) {
-  z-index: 6;
+.slyde:nth-child(2) {
+  z-index: 9;
   transform: rotate(3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(5).leave {
+.slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20597,13 +20540,70 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(3) {
+  z-index: 8;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(3).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
+.slyde:nth-child(4) {
+  z-index: 7;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(4).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(-1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20637,28 +20637,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(8).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(9) {
-  z-index: 2;
   transform: rotate(1deg) translate(-50%, -50%);
 }
-.slyde:nth-child(9).leave {
+.slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20673,13 +20654,32 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(9) {
+  z-index: 2;
+  transform: rotate(3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(9).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20877,7 +20877,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
   appearance: none;
-  background-color: #efefef;
+  background-color: #e9e9e9;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -21988,6 +21988,71 @@ section.weddings-form-section .container .row [class*=col] img {
 section.course-page-body {
   padding: 17rem 0;
   background-color: #f4f4f4;
+}
+
+section.calendar-section {
+  padding: 12rem 0;
+}
+section.calendar-section .title-bar {
+  padding-bottom: 3rem;
+}
+section.calendar-section .title-bar p {
+  font-size: 19px;
+}
+
+.contact-page-body {
+  padding-top: 5rem;
+  padding-bottom: 17rem;
+}
+.contact-page-body .rts-location-contact-area {
+  padding-top: 7rem;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 99px;
+  border: 1px solid rgb(244, 244, 244);
+  background: rgb(250, 250, 250);
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon .injectable {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 27px;
+  transform: translate(-50%, -50%);
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon .injectable path {
+  fill: #1aab5b;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon .injectable.phone {
+  width: 29px;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact .icon .injectable.envelope {
+  width: 25px;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact p {
+  font-family: "IKOB";
+  font-size: 21px;
+  -webkit-text-stroke: 0.3px;
+  letter-spacing: 0.2px;
+  margin-bottom: 5px;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact > span {
+  display: inline-block;
+  line-height: 138%;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact a {
+  text-decoration: none;
+}
+.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact a:hover, .contact-page-body .rts-location-contact-area .container .row .single-location-area-contact a:active, .contact-page-body .rts-location-contact-area .container .row .single-location-area-contact a:focus {
+  color: #262626;
+}
+.contact-page-body .rts-google-map-area .google-map-wrapper {
+  max-height: 450px;
 }
 
 footer {

@@ -1381,6 +1381,87 @@ section {
   }
 }
 
+//~ Events 
+section {
+  &.calendar-section {
+    padding: 12rem 0;
+    .title-bar {
+      padding-bottom: 3rem;
+      p {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+//~ Contact
+.contact-page-body {
+  padding-top: 5rem;
+  padding-bottom: 17rem;
+  .rts-location-contact-area {
+    padding-top: 7rem;
+    .container {
+      .row {
+        .single-location-area-contact {
+          $size: 55px;
+          .icon {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+            width: $size;
+            height: $size;
+            // padding: 10px;
+            border-radius: 99px;
+            border: 1px solid rgb(244, 244, 244);
+            background: rgb(250 250 250);
+
+            .injectable {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 27px;
+              transform: translate(-50%, -50%);
+              path {
+                fill: #1aab5b;
+              }
+              &.phone {
+                width: 29px;
+              }
+              &.envelope {
+                width: 25px;
+              }
+            }
+          }
+          p {
+            font-family: "IKOB";
+            font-size: 21px;
+            -webkit-text-stroke: 0.3px;
+            letter-spacing: 0.2px;
+            margin-bottom: 5px;
+          }
+          & > span {
+            display: inline-block;
+            line-height: 138%;
+          }
+          a {
+            text-decoration: none;
+            &:hover,
+            &:active,
+            &:focus {
+              color: #262626;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rts-google-map-area {
+    .google-map-wrapper {
+      max-height: 450px;
+    }
+  }
+}
 //* ===================================================
 //* =================== LAYOUT ========================
 //* ===================================================
