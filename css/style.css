@@ -20504,11 +20504,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20523,11 +20523,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20542,11 +20542,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20561,11 +20561,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20580,11 +20580,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20599,11 +20599,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20618,11 +20618,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20637,11 +20637,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20656,11 +20656,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20675,11 +20675,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -21020,7 +21020,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 section.hours-table {
   background: #fafafa;
-  padding-bottom: 12rem;
+  padding: 14rem 0;
 }
 section.hours-table .container .the-table-itself {
   background: white;
@@ -21031,11 +21031,10 @@ section.hours-table .container .the-table-itself .hours-table-brow {
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
   padding: 1rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper {
   display: flex;
+  flex-direction: column;
   padding: 2rem;
   padding-right: 0px;
   align-items: start;
@@ -21044,33 +21043,12 @@ section.hours-table .container .the-table-itself .hours-table-brow .table-title-
 section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper .clock-icon {
   width: 28px;
   height: auto;
-  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 section.hours-table .container .the-table-itself .hours-table-brow .table-title-wrapper h5 {
   font-size: 30px;
   margin-bottom: 0px;
   line-height: 86%;
-}
-section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper {
-  background: #f0f5f1;
-  border-radius: 5px;
-  padding: 1.45rem 2.25rem 2rem 2rem;
-}
-section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .word {
-  font-family: "IKOB Italic";
-  font-size: 21px;
-  padding-bottom: 2px;
-  color: var(--color-offset);
-}
-section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .word .pronunciation {
-  font-family: var(--font-primary);
-  font-size: 15px;
-  color: rgb(175, 175, 175);
-}
-section.hours-table .container .the-table-itself .hours-table-brow .definition-wrapper .definition {
-  line-height: 130%;
-  font-size: 15px;
-  color: var(--color-offset);
 }
 section.hours-table .container .the-table-itself .some-tables [class*=col] {
   padding: 3rem;
@@ -21095,6 +21073,7 @@ section.hours-table .container .the-table-itself .some-tables [class*=col] .hour
   flex-direction: row;
   width: 100%;
   line-height: 170%;
+  font-size: 21px;
 }
 section.hours-table .container .the-table-itself .some-tables [class*=col] .hours-row .gap {
   position: relative;
@@ -21103,28 +21082,33 @@ section.hours-table .container .the-table-itself .some-tables [class*=col] .hour
   top: -7px;
   margin: 0 10px;
 }
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool {
-  position: relative;
-}
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool .closed-sign {
-  z-index: 77;
-  opacity: 1;
-  width: 120px;
-  height: auto;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: rotate(-3deg) translate(-50%, -50%);
-  filter: drop-shadow(0px 9px 17px rgba(50, 50, 93, 0.15)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
-}
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-title,
-section.hours-table .container .the-table-itself .some-tables [class*=col].pool.closed .hours-row {
-  opacity: 0.7;
-}
 section.hours-table .container .the-table-itself .addendum {
   border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-  padding: 2.75rem 3rem 3.7rem 3rem;
+  padding: 1.25rem;
   line-height: 140%;
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen {
+  background: #f0f5f1;
+  border-radius: 5px;
+  padding: 2.5rem;
+  letter-spacing: 0.2px;
+  color: var(--color-offset);
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen a:visited, section.hours-table .container .the-table-itself .addendum .green-sheen a:hover, section.hours-table .container .the-table-itself .addendum .green-sheen a:focus {
+  color: inherit;
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen > span {
+  display: inline;
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen > span .asterisk {
+  height: 12px;
+  margin-top: -2px;
+  margin-right: 12px;
+  width: auto;
+  display: inline;
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen > span .asterisk path {
+  fill: #1aab5b;
 }
 
 .sidebar-btn {
@@ -21228,7 +21212,7 @@ section.hours-table .container .the-table-itself .addendum {
   text-decoration-color: #6b6b6b;
 }
 .short-introduction a:hover {
-  transform: translateY(-3px);
+  transform: translateY(-1px);
   box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.65) 0px 8px 16px -8px;
 }
 a .single-solution-style-one {
@@ -22035,15 +22019,16 @@ section.calendar-section .title-bar p {
   width: 25px;
 }
 .contact-page-body .rts-location-contact-area .container .row .single-location-area-contact p {
-  font-family: "IKOB";
-  font-size: 21px;
+  font-family: "Aeonik";
+  font-size: 28px;
   -webkit-text-stroke: 0.3px;
   letter-spacing: 0.2px;
   margin-bottom: 5px;
 }
 .contact-page-body .rts-location-contact-area .container .row .single-location-area-contact > span {
+  padding-top: 1rem;
   display: inline-block;
-  line-height: 138%;
+  line-height: 130%;
 }
 .contact-page-body .rts-location-contact-area .container .row .single-location-area-contact a {
   text-decoration: none;

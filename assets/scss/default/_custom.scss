@@ -143,7 +143,7 @@
 
 section.hours-table {
   background: #fafafa;
-  padding-bottom: 12rem;
+  padding: 14rem 0;
   .container {
     .the-table-itself {
       background: white;
@@ -154,10 +154,9 @@ section.hours-table {
         border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
         padding: 1rem;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         .table-title-wrapper {
           display: flex;
+          flex-direction: column;
           padding: 2rem;
           padding-right: 0px;
           align-items: start;
@@ -165,39 +164,12 @@ section.hours-table {
           .clock-icon {
             width: 28px;
             height: auto;
-            margin-right: 1rem;
+            margin-bottom: 1rem;
           }
           h5 {
             font-size: 30px;
             margin-bottom: 0px;
             line-height: 86%;
-          }
-        }
-        .definition-wrapper {
-          // background: var(--color-offset);
-          // background: #f3f7f4;
-          background: #f0f5f1;
-          border-radius: 5px;
-          padding: 1.45rem 2.25rem 2rem 2rem;
-          // border-left: none !important;
-          // max-height: 105px;
-          .word {
-            font-family: "IKOB Italic";
-            font-size: 21px;
-            padding-bottom: 2px;
-            color: var(--color-offset);
-            // color: white;
-            .pronunciation {
-              font-family: var(--font-primary);
-              font-size: 15px;
-              color: rgb(175, 175, 175);
-              // color: #01a95b;
-            }
-          }
-          .definition {
-            line-height: 130%;
-            font-size: 15px;
-            color: var(--color-offset);
           }
         }
       }
@@ -225,6 +197,7 @@ section.hours-table {
             flex-direction: row;
             width: 100%;
             line-height: 170%;
+            font-size: 21px;
             .gap {
               position: relative;
               flex: 1 1 auto;
@@ -233,34 +206,41 @@ section.hours-table {
               margin: 0 10px;
             }
           }
-          &.pool {
-            position: relative;
-            .closed-sign {
-              z-index: 77;
-              opacity: 1;
-              width: 120px;
-              height: auto;
-              position: absolute;
-              top: 55%;
-              left: 50%;
-              transform: rotate(-3deg) translate(-50%, -50%);
-              // filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.4));
-              filter: drop-shadow(0px 9px 17px rgba(50, 50, 93, 0.15))
-                drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
-            }
-            &.closed {
-              .hours-title,
-              .hours-row {
-                opacity: 0.7;
-              }
-            }
-          }
         }
       }
       .addendum {
         border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-        padding: 2.75rem 3rem 3.7rem 3rem;
+        padding: 1.25rem;
         line-height: 140%;
+        .green-sheen {
+          background: #f0f5f1;
+          border-radius: 5px;
+          padding: 2.5rem;
+          letter-spacing: .2px;
+          // line-height: 130%;
+          // font-size: 15px;
+          color: var(--color-offset);
+          a {
+            &:visited,
+            &:hover,
+            &:focus {
+              color: inherit;
+            }
+          }
+          & > span {
+            display: inline;
+            .asterisk {
+              height: 12px;
+              margin-top: -2px;
+              margin-right: 12px;
+              width: auto;
+              display: inline;
+              path {
+                fill: #1aab5b;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -385,7 +365,7 @@ section.hours-table {
       text-decoration-color: #6b6b6b;
     }
     &:hover {
-      transform: translateY(-3px);
+      transform: translateY(-1px);
       .col-two {
         // .little-right-arrow {
         //   transform: rotate(-45deg) translateX(2.5px);
@@ -1345,9 +1325,9 @@ section.weddings-form-section {
           font-family: "Aeonik";
         }
         form {
-          label{
+          label {
             padding-bottom: 5px;
-            color: var(--color-primary)
+            color: var(--color-primary);
           }
           input,
           textarea {
@@ -1381,7 +1361,7 @@ section {
   }
 }
 
-//~ Events 
+//~ Events
 section {
   &.calendar-section {
     padding: 12rem 0;
@@ -1434,15 +1414,16 @@ section {
             }
           }
           p {
-            font-family: "IKOB";
-            font-size: 21px;
+            font-family: "Aeonik";
+            font-size: 28px;
             -webkit-text-stroke: 0.3px;
             letter-spacing: 0.2px;
             margin-bottom: 5px;
           }
           & > span {
+            padding-top: 1rem;
             display: inline-block;
-            line-height: 138%;
+            line-height: 130%;
           }
           a {
             text-decoration: none;
