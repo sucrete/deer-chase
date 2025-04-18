@@ -113,6 +113,7 @@ header .rts-btn {
 
     @media #{$sm-layout} {
       padding: 15px 10px;
+      padding-left: 0px;
     }
 
     .nav-area {
@@ -326,7 +327,7 @@ header .rts-btn {
 
       svg {
         rect {
-          fill: #fff;
+          fill: #113e0c;
         }
       }
     }
@@ -336,6 +337,18 @@ header .rts-btn {
     @media #{$mdsm-layout} {
       display: none;
     }
+  }
+
+  @media #{$mdsm-layout} {
+   &.header--sticky.sticky {
+    .button-area-right-header {
+      svg {
+        rect {
+          fill: white;
+        }
+      }
+    }
+   }
   }
 }
 

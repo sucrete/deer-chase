@@ -23,17 +23,17 @@
           bottom: 3.25rem;
           content: "";
           display: block;
-          height: 1.5px;
+          height: 1.8px;
           left: 50%;
           position: absolute;
-          background: var(--color-primary);
+          background: #0e5023;
           transition: width 0.3s ease 0s, left 0.3s ease 0s,
             opacity 0.3s ease 0s;
           width: 0;
           opacity: 0;
         }
         &:hover {
-          color: var(--color-primary);
+          color: #0e5023;
           &:after {
             width: 100%;
             left: 0;
@@ -41,7 +41,7 @@
           }
         }
         &.active {
-          color: var(--color-primary);
+          color: #0e5023;
           &:after {
             width: 100%;
             left: 0;

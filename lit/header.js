@@ -57,6 +57,16 @@ export class Header extends LitElement {
                   alt=""
                   class="deer-chase-logo-roman injectable"
                 />
+                <img
+                  src="/assets/images/logo/deer-chase-roman-offset.svg"
+                  alt=""
+                  class="deer-chase-logo-roman-stacked injectable"
+                />
+                <img
+                  src="/assets/images/logo/deer-chase-stag.svg"
+                  alt=""
+                  class="deer-chase-logo-stag injectable"
+                />
               </a>
               <div class="nav-area">
                 <nav>

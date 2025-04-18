@@ -277,40 +277,24 @@ export class Footer extends LitElement {
           <nav class="nav-main mainmenu-nav mt--30">
             <ul class="mainmenu metismenu" id="mobile-menu-active">
               <li>
-                <a href="rates.html" class="main">Greens Fees</a>
-              </li>
-              <li class="has-droupdown">
-                <a href="#" class="main" aria-expanded="false">Events</a>
-                <ul class="submenu mm-collapse">
-                  <li><a href="events.html">Calendar</a></li>
-                  <li><a href="host-your-event.html">Host Your Event</a></li>
-                </ul>
+                <a href="rates.html" class="main">Rates</a>
               </li>
               <li>
                 <a href="membership.html" class="main">Membership</a>
-              </li>
-
-              <li class="has-droupdown">
-                <a href="#" class="main" aria-expanded="false">Pool</a>
-                <ul class="submenu mm-collapse">
-                  <li><a href="pool.html">Membership</a></li>
-                  <li><a href="pool.html#rules">Pool Rules</a></li>
-                </ul>
+               
               </li>
               <li>
-                <a href="online-store.html" class="main">Online Store</a>
+                <a href="weddings.html" class="main">Weddings</a>
               </li>
-              <li class="has-droupdown">
-                <a href="#" class="main" aria-expanded="false">About</a>
-                <ul class="submenu mm-collapse">
-                  <li><a href="about.html">Contact</a></li>
-                  <li>
-                    <a href="about.html#clubhouse-rental">Clubhouse Rental</a>
-                  </li>
 
-                  <li><a href="scorecard.html">Scorecard</a></li>
-                  <li><a href="holes-in-one.html">Holes-in-One!</a></li>
-                </ul>
+              <li>
+                <a href="#" class="main">Course</a>
+              </li>
+              <li>
+                <a href="events.html" class="main">Events</a>
+              </li>
+              <li>
+                <a href="contact.html" class="main">Contact</a>
               </li>
               <li>
                 <a

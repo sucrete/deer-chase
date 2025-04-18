@@ -421,8 +421,13 @@
               margin: 0 20px 0 30px;
             }
             h2 {
-              font-size: 55px;
+              font-size: 41px;
               letter-spacing: -2px;
+            }
+            .deer-tracks {
+              width: 219px;
+              height: auto;
+              margin: 0 16px 0 19px;
             }
           }
         }
@@ -481,7 +486,7 @@
 
       @media #{$sm-layout} {
         font-size: 44px;
-        line-height: 1.4;
+        line-height: 1;
       }
     }
 

@@ -650,7 +650,7 @@ ol ul {
 @media only screen and (max-width: 479px) {
   h3 {
     font-size: 22px;
-    line-height: 30px;
+    line-height: 35px;
   }
 }
 
@@ -12422,6 +12422,7 @@ Copyright (c) 2015 Daniel Eden
 @media only screen and (max-width: 767px) {
   .header-area-four .header-four-wrapper {
     padding: 15px 10px;
+    padding-left: 0px;
   }
 }
 .header-area-four .header-four-wrapper .nav-area ul li > a.nav-link {
@@ -12539,12 +12540,17 @@ Copyright (c) 2015 Daniel Eden
     display: block;
   }
   .header-area-four .button-area-right-header svg rect {
-    fill: #fff;
+    fill: #113e0c;
   }
 }
 @media only screen and (max-width: 991px) {
   .header-area-four .nav-area {
     display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header-area-four.header--sticky.sticky .button-area-right-header svg rect {
+    fill: white;
   }
 }
 
@@ -12597,16 +12603,16 @@ Copyright (c) 2015 Daniel Eden
   bottom: 3.25rem;
   content: "";
   display: block;
-  height: 1.5px;
+  height: 1.8px;
   left: 50%;
   position: absolute;
-  background: var(--color-primary);
+  background: #0e5023;
   transition: width 0.3s ease 0s, left 0.3s ease 0s, opacity 0.3s ease 0s;
   width: 0;
   opacity: 0;
 }
 .nav-area ul li a:hover {
-  color: var(--color-primary);
+  color: #0e5023;
 }
 .nav-area ul li a:hover:after {
   width: 100%;
@@ -12614,7 +12620,7 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 .nav-area ul li a.active {
-  color: var(--color-primary);
+  color: #0e5023;
 }
 .nav-area ul li a.active:after {
   width: 100%;
@@ -13466,8 +13472,13 @@ li.has-dropdown:hover .submenu li a {
     margin: 0 20px 0 30px;
   }
   .banner-four-bg .slider-wrapper .slider .slide .title-wrapper h2 {
-    font-size: 55px;
+    font-size: 41px;
     letter-spacing: -2px;
+  }
+  .banner-four-bg .slider-wrapper .slider .slide .title-wrapper .deer-tracks {
+    width: 219px;
+    height: auto;
+    margin: 0 16px 0 19px;
   }
 }
 
@@ -13504,7 +13515,7 @@ li.has-dropdown:hover .submenu li a {
 @media only screen and (max-width: 767px) {
   .banner-four-area .banner-four-wrapper .title {
     font-size: 44px;
-    line-height: 1.4;
+    line-height: 1;
   }
 }
 .banner-four-area .banner-four-wrapper p.disc {
@@ -20504,11 +20515,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20523,11 +20534,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20542,11 +20553,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20580,11 +20591,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20599,11 +20610,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20618,11 +20629,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20656,11 +20667,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20675,11 +20686,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20888,7 +20899,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   font-size: 1.8rem;
   font-weight: 600;
-  color: rgb(154, 154, 154);
+  color: rgb(104, 104, 104);
   display: flex;
   letter-spacing: 0.2px;
   align-items: center;
@@ -20898,7 +20909,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 
 .embla-thumbs__slide--selected .embla-thumbs__slide__number {
-  color: var(--text-body);
+  background: #134f26;
+  color: white;
 }
 
 .my-hr {
@@ -21092,23 +21104,25 @@ section.hours-table .container .the-table-itself .addendum .green-sheen {
   border-radius: 5px;
   padding: 2.5rem;
   letter-spacing: 0.2px;
-  color: var(--color-offset);
 }
-section.hours-table .container .the-table-itself .addendum .green-sheen a:visited, section.hours-table .container .the-table-itself .addendum .green-sheen a:hover, section.hours-table .container .the-table-itself .addendum .green-sheen a:focus {
-  color: inherit;
-}
-section.hours-table .container .the-table-itself .addendum .green-sheen > span {
-  display: inline;
-}
-section.hours-table .container .the-table-itself .addendum .green-sheen > span .asterisk {
-  height: 12px;
-  margin-top: -2px;
-  margin-right: 12px;
+section.hours-table .container .the-table-itself .addendum .green-sheen .asterisk {
+  height: 17px;
+  margin-bottom: 2rem;
   width: auto;
   display: inline;
 }
-section.hours-table .container .the-table-itself .addendum .green-sheen > span .asterisk path {
+section.hours-table .container .the-table-itself .addendum .green-sheen .asterisk path {
   fill: #1aab5b;
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen p {
+  color: var(--color-offset);
+  line-height: 130%;
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen p:first-of-type {
+  margin-bottom: 15px;
+}
+section.hours-table .container .the-table-itself .addendum .green-sheen p a:visited, section.hours-table .container .the-table-itself .addendum .green-sheen p a:hover, section.hours-table .container .the-table-itself .addendum .green-sheen p a:focus {
+  color: inherit;
 }
 
 .sidebar-btn {
@@ -21319,7 +21333,9 @@ a .single-solution-style-one:hover .bottom .card-subheading .arrow path {
   fill: white;
 }
 
-header.header--sticky .deer-chase-logo-roman {
+header.header--sticky .deer-chase-logo-roman,
+header.header--sticky .deer-chase-logo-roman-stacked,
+header.header--sticky .deer-chase-logo-stag {
   display: none;
 }
 header.header--sticky.sticky .deer-chase-logo-badge {
@@ -21341,32 +21357,9 @@ header.header-area-four.header--sticky:not(.sticky).subpage .container .row .hea
 }
 
 header.header--sticky:not(.sticky).home .container .row .header-four-wrapper .nav-area ul li > a.nav-link {
-  color: var(--color-primary);
+  color: #0e5023;
 }
 
-@media (max-width: 992px) {
-  header.header-area-four .container .row .header-four-wrapper {
-    height: 70px;
-    position: relative;
-  }
-  header.header-area-four .container .row .header-four-wrapper a.logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-badge {
-    display: none;
-  }
-  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman {
-    position: relative;
-    display: unset;
-    top: 3px;
-  }
-  header.header-area-four.header--sticky.sticky .container .row .header-four-wrapper .logo .deer-chase-logo-roman {
-    top: 0px;
-  }
-}
 table {
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
@@ -21380,6 +21373,7 @@ table thead tr th {
   font-family: "Aeonik Medium";
   text-transform: capitalize;
   text-align: center;
+  line-height: 1em;
 }
 table tbody tr:nth-child(odd) th,
 table tbody tr:nth-child(odd) td {
@@ -21405,6 +21399,7 @@ table tbody tr th .th-wrap {
   align-items: center;
   font-family: "Aeonik Medium";
   text-transform: capitalize;
+  line-height: 1em;
 }
 table tbody tr th .note {
   font-family: "Sono", monospace;
@@ -21848,7 +21843,7 @@ section.terms .container .inner-container ul:first-of-type {
 @media (max-width: 576px) {
   .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h3 {
     font-size: 33px;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 }
 .rates-page-body [class*=table-wrapper] table .th-wrap {
@@ -22308,6 +22303,28 @@ footer .rts-copyright-area-one .new-row p {
 }
 
 @media (max-width: 992px) {
+  header.header-area-four .container .row .header-four-wrapper {
+    height: 70px;
+    position: relative;
+    justify-content: flex-end;
+  }
+  header.header-area-four .container .row .header-four-wrapper a.logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-badge {
+    display: none;
+  }
+  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman {
+    position: relative;
+    display: unset;
+    top: 3px;
+  }
+  header.header-area-four.header--sticky.sticky .container .row .header-four-wrapper .logo .deer-chase-logo-roman {
+    top: 0px;
+  }
   .mobile-padding {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
@@ -22402,6 +22419,59 @@ footer .rts-copyright-area-one .new-row p {
   }
 }
 @media screen and (max-width: 576px) {
+  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman {
+    display: none;
+  }
+  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked {
+    display: unset;
+    width: 220px;
+    top: 12px;
+    position: relative;
+  }
+  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked path {
+    fill: var(--color-primary);
+  }
+  header.header-area-four.header--sticky.sticky .container .row .header-four-wrapper a.logo .deer-chase-logo-stag {
+    display: unset;
+    width: 30px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header.header-area-four:not(.home) .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked path {
+    fill: white;
+  }
+  header.header-area-four:not(.home) .container .row .header-four-wrapper .button-area-right-header .menu-btn-toggle svg rect {
+    fill: white;
+  }
+  header.header-area-four:not(.home).sticky .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked {
+    display: none;
+  }
+  .banner-four-area.home-page .container {
+    margin-bottom: 2rem;
+  }
+  .banner-four-area.home-page .container .short-introduction p {
+    font-size: 17px;
+    line-height: 130%;
+    margin-bottom: 1rem;
+    letter-spacing: 0.4px;
+    text-shadow: 0 0 12px black;
+    width: 90%;
+  }
+  .banner-four-area.home-page .container .short-introduction a .trip-advisor-bite {
+    padding: 1rem 0rem 0.5rem 0.25rem;
+  }
+  .banner-four-area.home-page .container .short-introduction a .trip-advisor-bite .trip-advisor-logo {
+    height: 24px;
+  }
+  .banner-four-area.home-page .container .short-introduction a .trip-advisor-bite .little-right-arrow {
+    width: 22px;
+  }
+  section.hours-table {
+    padding-top: 2rem !important;
+  }
   section.hours-table .container .the-table-itself .hours-table-brow {
     flex-direction: column;
   }
@@ -22419,37 +22489,12 @@ footer .rts-copyright-area-one .new-row p {
   .membership-page-body .container .row .col .membership-nav-wrapper ul.membership-nav .nav-item .nav-link {
     font-size: 16px;
   }
-  .pool-page-body .container h2 {
-    font-size: 40px;
-    padding-bottom: 2rem;
-  }
-  .pool-rules {
-    padding-top: 9rem;
-    padding-bottom: 3rem;
-  }
   .contact-section .contact-row {
     flex-direction: column;
   }
   .contact-section .contact-box {
     padding: 3.25rem 3.5rem 3.5rem 3.5rem;
     margin-bottom: 20px;
-  }
-  .scorecard-page-body {
-    padding-bottom: 0;
-  }
-  .holes-in-one-page-body {
-    padding-top: 9rem;
-    padding-bottom: 6rem;
-  }
-  .holes-in-one-page-body .container .col h3 {
-    font-size: 45px;
-  }
-  .holes-in-one-page-body .container .col .hr-group {
-    margin-bottom: 5rem;
-  }
-  .holes-in-one-page-body .container .col p {
-    font-size: 17px;
-    margin-bottom: 8px;
   }
   .booking-container {
     padding: 7rem 29px;
@@ -22468,5 +22513,44 @@ footer .rts-copyright-area-one .new-row p {
   }
   .calendar-section .title-bar .single-tag {
     margin-left: 8px;
+  }
+  .membership-page-body {
+    padding-bottom: 0 !important;
+    padding-top: 2rem !important;
+  }
+  .membership-page-body .container {
+    padding-bottom: 0 !important;
+  }
+  .membership-page-body .container .row .col .tab-content h3 {
+    font-size: 33px;
+  }
+  .membership-page-body .container .row .col .tab-content:nth-of-type(2) {
+    padding-top: 0;
+  }
+  section.terms {
+    padding-bottom: 4rem;
+  }
+  section.terms .container {
+    padding: 22px;
+    padding-top: 0;
+  }
+  section.terms .container .inner-container {
+    padding-left: 2rem;
+  }
+  section.terms .container .inner-container h3 {
+    margin-bottom: 0px;
+    font-size: 23px;
+  }
+  section.terms .container .inner-container h3 ul {
+    margin-top: 0;
+    background: green;
+  }
+  section.terms .container .inner-container h3 ul li {
+    line-height: 150%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .table-preface [class*=col] h3 br {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
