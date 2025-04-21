@@ -20515,11 +20515,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20534,11 +20534,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20553,11 +20553,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20591,11 +20591,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20610,11 +20610,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20629,28 +20629,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(8) {
-  z-index: 3;
   transform: rotate(-2deg) translate(-50%, -50%);
 }
-.slyde:nth-child(8).leave {
+.slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20665,11 +20646,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
-.slyde:nth-child(9) {
-  z-index: 2;
+.slyde:nth-child(8) {
+  z-index: 3;
   transform: rotate(3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(9).leave {
+.slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20684,13 +20665,32 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(9) {
+  z-index: 2;
+  transform: rotate(2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(9).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -21924,10 +21924,12 @@ section.weddings-page-body .gradient-mask {
   height: 100%;
   top: 0;
   left: 0;
-  background: radial-gradient(ellipse 60% 70% at 65%, transparent 35%, rgb(250, 250, 246) 70%);
 }
 section.weddings-page-body .weddings-section-overlay {
   background: rgba(250, 250, 246, 0.505);
+}
+section.weddings-page-body .gradient-mask {
+  background: radial-gradient(ellipse 60% 70% at 65%, transparent 35%, rgb(250, 250, 246) 70%);
 }
 
 section.weddings-form-section {
@@ -22547,6 +22549,49 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.terms .container .inner-container h3 ul li {
     line-height: 150%;
+  }
+  section.weddings-page-body .container .row [class*=col] div h2 {
+    font-size: 33px;
+  }
+  section.weddings-page-body .container .row [class*=col] .slyder-container {
+    height: 275px;
+  }
+  section.weddings-page-body .container .row [class*=col] .slyder-container .slyde {
+    min-width: 398px;
+  }
+  section.weddings-page-body .container .row [class*=col] .slyder-container .slyde.square {
+    min-width: 275px;
+  }
+  section.weddings-page-body .gradient-mask {
+    background: radial-gradient(ellipse 80% 50% at 50% 30%, transparent 35%, rgb(250, 250, 246) 70%);
+  }
+  section.weddings-form-section {
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 6rem;
+  }
+  section.weddings-form-section .container {
+    padding: 2rem;
+    padding-bottom: 6.5rem;
+  }
+  section.weddings-form-section .container .row [class*=col] h3 {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 29px;
+    line-height: 31px;
+  }
+  section.weddings-form-section .container form .row [class*=col] {
+    margin-top: 0rem;
+  }
+  section.weddings-form-section .container .mobile-row-top-padding {
+    padding-top: 2rem;
+  }
+  section.weddings-form-section .container .mobile-col-top-padding {
+    padding-top: 1rem;
+  }
+  section.course-page-body .container .embla .embla__slide__wrapper {
+    height: 219px;
   }
 }
 @media screen and (min-width: 576px) {

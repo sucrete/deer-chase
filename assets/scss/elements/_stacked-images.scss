@@ -10,7 +10,7 @@
   padding: 0.75rem 1.65rem;
   letter-spacing: 1px;
   text-transform: capitalize;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
   cursor: pointer;
   appearance: none;
   position: absolute;
@@ -23,7 +23,7 @@
   .reload-icon {
     width: 17px;
     path {
-      transition: fill .2s ease;
+      transition: fill 0.2s ease;
       fill: #bebebe;
     }
   }
@@ -130,4 +130,5 @@ $zLayer: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1;
       min-width: 398px;
     }
   }
+
 }
