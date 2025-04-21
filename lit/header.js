@@ -82,7 +82,7 @@ export class Header extends LitElement {
                     <li>
                       <a
                         href="book-tee-time.html"
-                        class="rts-btn btn-primary my-btn"
+                        class="rts-btn btn-primary my-btn book-tee-time-btn"
                       >
                         Book Tee Time
                         <img

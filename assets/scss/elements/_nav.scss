@@ -47,6 +47,16 @@
             left: 0;
             opacity: 1;
           }
+          &.book-tee-time-btn {
+            &:after {
+              opacity: 0;
+            }
+            &:hover {
+              &:after {
+                opacity: 1;
+              }
+            }
+          }
         }
       }
     }
@@ -92,7 +102,7 @@
         right: -14px;
         transition: 0.25s ease;
         transform-origin: center;
-        -webkit-text-stroke: .75px;
+        -webkit-text-stroke: 0.75px;
       }
     }
   }

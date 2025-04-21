@@ -301,9 +301,9 @@ section.hours-table {
   p {
     color: white;
     font-size: 19px;
-    line-height: 150%;
+    line-height: 125%;
     margin-bottom: 2rem;
-    text-shadow: 0 0 8px black;
+    text-shadow: 0 0 12px black;
   }
   a {
     position: relative;
@@ -1407,6 +1407,11 @@ section {
       max-height: 450px;
     }
   }
+  .contact-area-form-wrapper {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
 }
 //* ===================================================
 //* =================== LAYOUT ========================
@@ -1841,6 +1846,26 @@ footer {
       }
     }
   }
+  header {
+    //* at top of page (before scroll-down) for sub-pages
+    &.header-area-four:not(.home) {
+      .container {
+        .row {
+          .header-four-wrapper {
+            .button-area-right-header {
+              .menu-btn-toggle {
+                svg {
+                  rect {
+                    fill: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
   .mobile-padding {
     padding-top: 5rem !important;
@@ -2063,15 +2088,6 @@ footer {
                 }
               }
             }
-            .button-area-right-header {
-              .menu-btn-toggle {
-                svg {
-                  rect {
-                    fill: white;
-                  }
-                }
-              }
-            }
           }
         }
       }
@@ -2196,15 +2212,12 @@ footer {
   }
   .calendar-section {
     .title-bar {
-      padding-top: 7rem;
+      padding-top: 0rem;
       flex-direction: column;
       align-items: unset;
       h2 {
         font-size: 36px;
         margin-bottom: 8px;
-      }
-      .single-tag {
-        margin-left: 8px;
       }
     }
   }
@@ -2322,6 +2335,22 @@ footer {
         .embla {
           .embla__slide__wrapper {
             height: 219px;
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.contact-page-body {
+      .rts-location-contact-area {
+        padding-top: 4rem;
+        .container {
+          .row {
+            .single-location-area-contact {
+              p {
+                margin-bottom: 0;
+              }
+            }
           }
         }
       }

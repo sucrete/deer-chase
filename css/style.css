@@ -12627,6 +12627,12 @@ Copyright (c) 2015 Daniel Eden
   left: 0;
   opacity: 1;
 }
+.nav-area ul li a.active.book-tee-time-btn:after {
+  opacity: 0;
+}
+.nav-area ul li a.active.book-tee-time-btn:hover:after {
+  opacity: 1;
+}
 
 .header--sticky.sticky .nav-area ul li > a.nav-link {
   padding: 20px 0;
@@ -20515,11 +20521,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20553,11 +20559,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20572,11 +20578,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20591,11 +20597,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20610,11 +20616,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20629,11 +20635,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20667,11 +20673,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20686,11 +20692,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -21162,9 +21168,9 @@ section.hours-table .container .the-table-itself .addendum .green-sheen p a:visi
 .short-introduction p {
   color: white;
   font-size: 19px;
-  line-height: 150%;
+  line-height: 125%;
   margin-bottom: 2rem;
-  text-shadow: 0 0 8px black;
+  text-shadow: 0 0 12px black;
 }
 .short-introduction a {
   position: relative;
@@ -22036,6 +22042,9 @@ section.calendar-section .title-bar p {
 .contact-page-body .rts-google-map-area .google-map-wrapper {
   max-height: 450px;
 }
+.contact-page-body .contact-area-form-wrapper h2 {
+  margin-bottom: 0;
+}
 
 footer {
   background: var(--color-primary);
@@ -22327,6 +22336,9 @@ footer .rts-copyright-area-one .new-row p {
   header.header-area-four.header--sticky.sticky .container .row .header-four-wrapper .logo .deer-chase-logo-roman {
     top: 0px;
   }
+  header.header-area-four:not(.home) .container .row .header-four-wrapper .button-area-right-header .menu-btn-toggle svg rect {
+    fill: white;
+  }
   .mobile-padding {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
@@ -22445,9 +22457,6 @@ footer .rts-copyright-area-one .new-row p {
   header.header-area-four:not(.home) .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked path {
     fill: white;
   }
-  header.header-area-four:not(.home) .container .row .header-four-wrapper .button-area-right-header .menu-btn-toggle svg rect {
-    fill: white;
-  }
   header.header-area-four:not(.home).sticky .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked {
     display: none;
   }
@@ -22505,16 +22514,13 @@ footer .rts-copyright-area-one .new-row p {
     font-size: 21px;
   }
   .calendar-section .title-bar {
-    padding-top: 7rem;
+    padding-top: 0rem;
     flex-direction: column;
     align-items: unset;
   }
   .calendar-section .title-bar h2 {
     font-size: 36px;
     margin-bottom: 8px;
-  }
-  .calendar-section .title-bar .single-tag {
-    margin-left: 8px;
   }
   .membership-page-body {
     padding-bottom: 0 !important;
@@ -22592,6 +22598,12 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.course-page-body .container .embla .embla__slide__wrapper {
     height: 219px;
+  }
+  section.contact-page-body .rts-location-contact-area {
+    padding-top: 4rem;
+  }
+  section.contact-page-body .rts-location-contact-area .container .row .single-location-area-contact p {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 576px) {
