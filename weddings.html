@@ -148,38 +148,59 @@
               Get in touch with us and we'll help you put together the perfect
               event.
             </h3>
-            <form>
-              <div class="row pb-3 g-5">
-                <div class="col-12 col-md-6">
-                  <label for="">Name</label>
-                  <input type="text" id="" name="" required />
-                </div>
-                <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="_1">Email</label>
-                  <input type="email" id="_1" name="_1" required />
-                </div>
-              </div>
+            <form id="wedding-form" class="wedding-form">
+               <div class="message-sent-box">
+                  <div class="row text-center flex-column align-items-center">
+                    <div class="image-orb">
+                      <img src="assets/images/icons/message-sent.svg" alt="" />
+                    </div>
 
-              <div class="row pb-3 g-5 mobile-row-top-padding">
-                <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="_2">Phone (Optional)</label>
-                  <input type="tel" id="_2" name="_2" />
+                    <h4>Event details submitted!</h4>
+                  </div>
                 </div>
-                <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="approximate_of_people">Approx. # of People</label>
-                  <input
-                    type="number"
-                    id="approximate_of_people"
-                    name="approximate_of_people"
-                    required
-                  />
+              <div class="inputs-wrapper">
+                <div class="row pb-3 g-5">
+                  <div class="col-12">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
                 </div>
+                <div class="row pb-3 g-5">
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="phone">Phone </label>
+                    <input type="tel" id="phone" name="phone" />
+                  </div>
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                </div>
+
+                <div class="row pb-3 g-5 mobile-row-top-padding">
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="event_date">Event date</label>
+                    <input type="text" id="event_date" name="event_date" />
+                  </div>
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="group_size"
+                      >Guest count (Approx.)</label
+                    >
+                    <input
+                      type="number"
+                      id="group_size"
+                      name="number_of_people"
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button class="rts-btn btn-primary" type="submit">
+                  <span class="button-text">Submit details</span>
+                </button>
               </div>
-              <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <button class="rts-btn btn-primary" type="submit">Submit</button>
             </form>
           </div>
           <div class="d-none d-md-flex col-4">
@@ -287,11 +308,21 @@
 
     <script defer src="assets/js/plugins/svg-inject.js"></script>
     <script defer src="assets/js/plugins/metismenu.js"></script>
-    <script defer src="assets/js/vendor/contact-form.js"></script>
     <script defer src="assets/js/vendor/bootstrap.min.js"></script>
 
     <script type="module" src="./assets/js/stacked-images.js "></script>
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
+
+    <!-- form handlers -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./assets/js/wedding-util.js "
+    ></script>
   </body>
 </html>
