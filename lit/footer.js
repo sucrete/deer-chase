@@ -58,7 +58,7 @@ export class Footer extends LitElement {
                         />(573) 346-6117
                       </a>
                       <a
-                        href="https://maps.app.goo.gl/Bzrg9oSfx67wBW1E7"
+                        href="https://maps.app.goo.gl/cVG7HWxwzqZM2WwK6"
                         target="_blank"
                         class="link map-link d-flex flex-row align-items-start no-underline"
                       >
