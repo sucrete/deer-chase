@@ -198,7 +198,7 @@ section.hours-table {
             flex-direction: row;
             width: 100%;
             line-height: 170%;
-            font-size: 21px;
+            font-size: 17px;
             .gap {
               position: relative;
               flex: 1 1 auto;
@@ -244,6 +244,9 @@ section.hours-table {
           }
         }
       }
+    }
+    .hours-table-column {
+      padding-top: 6.9rem;
     }
   }
 }
@@ -775,6 +778,7 @@ table {
 //* ===================================================
 //~ Book Tee Time
 .booking-container {
+  padding-top: 10rem;
   .row:first-child {
     justify-content: space-between;
     padding: 11rem 0 7rem 0;
@@ -1340,7 +1344,7 @@ section {
       padding-bottom: 3rem;
       h2 {
         @media (min-width: 768px) {
-          line-height: .9;
+          line-height: 0.9;
         }
       }
       p {
@@ -1708,21 +1712,37 @@ footer {
   }
   @media screen and (max-width: 550px) {
     .weather-card {
-      ._500 {
-        line-height: 130%;
-        margin-bottom: 1rem !important;
-        .hyphen {
-          display: none;
-        }
-      }
       .card-body {
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-bottom: 2.5rem;
+        padding-bottom: .5rem;
         padding-top: 1rem;
-
-        .today-icon {
-          padding-right: 0rem;
+        .weather-heading._500 {
+          line-height: 106%;
+          margin-bottom: 0rem !important;
+          padding-bottom: 1.5rem;
+          font-size: 2.5rem;
+          .grey-text {
+            display: block;
+          }
+        }
+        .today-row {
+          .today-icon {
+            padding-right: 0rem;
+          }
+          .today-temp {
+            font-size: 4.5rem;
+            .the-temp {
+              &:after {
+                top: 3px;
+              }
+            }
+          }
+          .today-weather {
+            .today-weather-wrapper {
+              text-align: center;
+            }
+          }
         }
       }
     }
@@ -1736,23 +1756,31 @@ footer {
     }
   }
   @media screen and (max-width: 1106px) {
-    .gradient-footer-wrapper {
-      .rts-footer-area {
-        .container {
-          .row {
-            .logo-column {
-              .logo-brick {
-                .logo-col {
-                  flex-basis: unset;
+    footer {
+      .gradient-footer-wrapper {
+        .rts-footer-area {
+          .container {
+            .row {
+              .logo-column {
+                .logo-brick {
+                  .logo-col {
+                    flex-basis: unset;
+                  }
                 }
               }
-            }
-            .weather-col {
-              .weather-card {
-                padding: 5rem;
-                .card-body {
-                  .weather-heading {
-                    padding: 1rem;
+              .weather-col {
+                .weather-card {
+                  padding: 5rem;
+                  .card-body {
+                    .weather-heading {
+                      padding: 0rem;
+                      font-size: 26px;
+                      .grey-text {
+                        .break {
+                          display: unset;
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -1782,12 +1810,10 @@ footer {
       .rts-footer-area {
         .container {
           & > .row {
-            padding-bottom: 4rem;
+            padding-bottom: 1.5rem;
             .logo-column {
               .logo-brick {
-                padding-bottom: 4rem;
-                .logo-col {
-                }
+                padding-bottom: 2.5rem;
               }
               .footer-form {
                 padding-bottom: 5rem;
@@ -1795,7 +1821,7 @@ footer {
             }
             .weather-col {
               .weather-card {
-                padding: 5rem 3rem;
+                padding: 3rem 1rem;
                 width: 100%;
                 .card-body {
                   .weather-heading {
@@ -1941,7 +1967,7 @@ footer {
             flex-direction: column;
             padding-left: 1.5rem;
             .title {
-              padding-top: 1rem;
+              padding-top: 0rem;
               line-height: 100%;
               font-size: 25px;
             }
@@ -1952,7 +1978,7 @@ footer {
             // &:last-of-type {
             //   padding-right: 3rem
             // }
-            padding: 3.75rem;
+            padding: 3rem 3.75rem;
             &:nth-of-type(2),
             &:nth-of-type(3) {
               border-top: 1.5px solid rgba(0, 0, 0, 0.05);
@@ -2171,24 +2197,34 @@ footer {
   }
   section.hours-table {
     padding-top: 2rem !important;
+    padding-bottom: 10rem !important;
     .container {
-      .the-table-itself {
-        .hours-table-brow {
-          flex-direction: column;
+      .row {
+        flex-direction: column-reverse;
+        .a-little-extra-on-mobile {
+          padding-top: 3rem;
         }
-        .some-tables {
-          [class*="col"] {
-            .hours-row {
-              font-size: 15px;
+        .hours-table-column {
+          padding-top: 0;
+          .the-table-itself {
+            .hours-table-brow {
+              flex-direction: column;
             }
-          }
-        }
-        .addendum {
-          .green-sheen {
-            padding: 2rem;
-            padding-bottom: 2.5rem;
-            p {
-              font-size: 15px;
+            .some-tables {
+              [class*="col"] {
+                .hours-row {
+                  font-size: 15px;
+                }
+              }
+            }
+            .addendum {
+              .green-sheen {
+                padding: 2rem;
+                padding-bottom: 2.5rem;
+                p {
+                  font-size: 15px;
+                }
+              }
             }
           }
         }

@@ -114,15 +114,16 @@ export class Footer extends LitElement {
                 </div>
               </div>
               <div
-                class="col-12 col-md-5 justify-content-md-end d-flex weather-col pt-5 pt-md-0 mt-5 pt-md-0"
+                class="col-12 col-md-5 justify-content-md-end d-flex weather-col pt-5 pt-md-0 mt-3"
               >
                 <div class="weather-card">
                   <div class="card-body">
                     <div class=" _500 fs-24 weather-heading">
                       Weather
                       <span class="grey-text">
-                        <span class="hyphen">-</span>
                         <br class="break" />
+                        <span class="hyphen">-</span>
+
                         Linn Creek, MO</span
                       >
                     </div>
@@ -177,8 +178,8 @@ export class Footer extends LitElement {
                         />
                       </div>
                       <div class="col-5 temp my-auto text-center">
-                        <span class="hi">72</span>°F /
-                        <span class="lo">57</span>°F
+                        <span class="hi">72</span>° /
+                        <span class="lo">57</span>°
                       </div>
                     </div>
                     <!--~ Future Row 2 -->
@@ -198,8 +199,8 @@ export class Footer extends LitElement {
                         />
                       </div>
                       <div class="col-5 temp my-auto text-center">
-                        <span class="hi">72</span>°F /
-                        <span class="lo">57</span>°F
+                        <span class="hi">72</span>° /
+                        <span class="lo">57</span>°
                       </div>
                     </div>
                     <!--~ Future Row 3 -->
@@ -219,8 +220,8 @@ export class Footer extends LitElement {
                         />
                       </div>
                       <div class="col-5 temp my-auto text-center">
-                        <span class="hi">72</span>°F /
-                        <span class="lo">57</span>°F
+                        <span class="hi">72</span>° /
+                        <span class="lo">57</span>°
                       </div>
                     </div>
                   </div>

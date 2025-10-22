@@ -36,6 +36,15 @@
     />
     <link rel="stylesheet preload" href="css/style.css" as="style" />
 
+    <!-- fullCalendar -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+    <!-- fullCalendar initiation -->
+    <script src="assets/js/listBuilder.js"></script>
+    <!-- moment.js - time parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
+      <!-- Sanity data fetch -->
+    <script src="assets/js/fetchData.js"></script>
+
     <!-- header Lit component -->
     <script type="module" src="./lit/header.js"></script>
 
@@ -166,7 +175,20 @@
     <section class="hours-table mobile-padding">
       <div class="container">
         <div class="row g-5 justify-content-between">
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-md-8 a-little-extra-on-mobile">
+            <div
+              class="events-list-container wow fadeInUp"
+              data-wow-offset="120"
+              data-wow-delay=".1s"
+            >
+              <h6 class="events-list-heading">Upcoming Events</h6>
+              <div id="events-list"></div>
+              <a href="/calendar.html" class="all-events-link">
+                view all events
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 hours-table-column">
             <div
               class="the-table-itself wow fadeInUp"
               data-wow-offset="120"
@@ -212,13 +234,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            class="col-12 col-md-6 wow fadeInUp"
-            data-wow-offset="120"
-            data-wow-delay=".2s"
-          >
-            << --- events or facebook feed --- >>
           </div>
         </div>
       </div>

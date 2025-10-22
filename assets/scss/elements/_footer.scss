@@ -63,7 +63,6 @@
   padding-top: 14rem;
   // background-color: #f4f7f5;
   .container {
-    
     padding: 0 1rem 11rem 2rem;
   }
   & > .container {
@@ -94,9 +93,9 @@
     }
   }
   @media (max-width: 768px) {
-    padding-top: 10rem;
+    padding-top: 6rem;
     .container {
-      padding: 0 2rem 11rem 2rem;
+      padding: 0 2rem 6rem 2rem;
     }
   }
 }
@@ -114,7 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 0 0 0; 
+    padding: 6rem 0 0 0;
     .teequest-link {
       .fa-gears {
         display: inline-block;
@@ -129,7 +128,8 @@
     }
     @media #{$large-mobile} {
       flex-direction: column;
-      gap: 20px;
+      gap: 3px;
+      padding-top: 4rem;
     }
 
     p {
@@ -289,6 +289,41 @@
         margin: 0;
         display: flex;
         align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    .gradient-footer-wrapper {
+      .container {
+        .row {
+          .logo-column {
+            div:not(.that-group) {
+              .link-group {
+                flex-wrap: wrap;
+                padding-left: 3px;
+                .contact-stack,
+                .social-stack {
+                  width: 100%;
+                }
+                .contact-stack {
+                  border-right: 1px solid transparent;
+                }
+                .social-stack {
+                  padding-left: 0px;
+                  padding-top: 1.5rem;
+                  .social-link {
+                    img {
+                      width: 15px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

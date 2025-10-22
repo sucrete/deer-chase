@@ -294,7 +294,7 @@ $modal-margin: 3rem;
   }
 }
 
-$outline-color: #e6e6e6;
+$outline-color: #ececec;
 //* Event List styling
 .fc-monthList-view {
   position: relative !important;
@@ -304,18 +304,20 @@ $outline-color: #e6e6e6;
     position: relative;
     .event-list-item {
       padding: 2.75rem 2.25rem 3rem 2.25rem;
-      // border-radius: 10px;
+      border-radius: 10px;
       background-color: white;
-      // border: 1px solid $outline-color;
+      border: 1px solid $outline-color;
       transition: all 0.25s ease;
       position: relative;
       z-index: 7;
+      &.today {
+        background-color: #fffbca;
+      }
       .event-list-title {
-        font-family: "Aeonik Medium", sans-serif;
+        font-family: "Aeonik Medium";
         color: rgb(29, 29, 29);
-        font-size: 25px;
-        // font-weight: 500;
-        padding-bottom: 0.5rem;
+        font-size: 24px;
+        padding-bottom: 0.25rem;
         letter-spacing: 0.1px;
       }
       .event-list-date-wrapper {
@@ -336,18 +338,18 @@ $outline-color: #e6e6e6;
         }
       }
       hr {
-        background-color: $inner-border-color;
-        margin: 1.25rem 0;
+        background-color: #00000017;
+        margin: 1rem 0;
         margin-bottom: 1.1rem;
         opacity: 1;
       }
       .event-list-description {
         padding: 0;
+        padding-top: 0.5rem;
         color: #767364;
         letter-spacing: 0.2px;
-        line-height: 1.4;
-        padding-top: 0.5rem;
         white-space: pre-line;
+        line-height: 1.3;
       }
       .event-list-footer {
         padding: 2rem 0 0 0;
@@ -359,37 +361,32 @@ $outline-color: #e6e6e6;
           display: flex;
           align-items: center;
           justify-content: center;
-          // bottom: 0.5rem;
-          // right: 3rem;
-          border-radius: 99px;
+          height: 32px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          border-radius: 1px;
           background-color: var(--color-offset);
-          text-decoration: none;
+          padding-bottom: 4.5px;
+          padding-left: 1rem;
+          padding-right: 1rem;
           transition: all 0.25s ease;
-          padding: 6px 12px 6px 14px;
-          box-shadow: none;
-          .button-text {
-            transition: color 0.15s ease;
-            color: white;
-          }
-          .kinked-arrow {
-            position: relative;
-            display: inline-block;
-            top: 2px;
-            left: 50px;
-            color: rgba(255, 255, 255, 0.8);
-          }
+          border: none;
           &:hover {
-            // color: rgba(255, 255, 255, 0.8);
-            background-color: #046322;
+            background-color: var(--color-tertiary);
+          }
+          &:active,
+          &:focus {
+            box-shadow: none;
+            // border: none;
           }
         }
         .event-list-flyer-btn {
           border: 1.5px solid var(--color-offset);
-          background-color: white;
+          background-color: transparent;
           color: var(--color-offset);
           &:hover {
             color: white;
-            background-color: var(--color-offset);
+            background-color: var(--color-offset); 
             border-color: var(--color-offset);
           }
         }
@@ -402,20 +399,6 @@ $outline-color: #e6e6e6;
         z-index: 77;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 6px -1px,
           rgba(0, 0, 0, 0.04) 0px 2px 4px -1px;
-      }
-      &-limned {
-        border: 1px solid $outline-color;
-      }
-    }
-    &-home {
-      .event-list-item {
-        .event-content-row {
-          .content-side {
-            .event-list-date-mobile-wrapper {
-              display: none;
-            }
-          }
-        }
       }
     }
   }
@@ -446,7 +429,7 @@ section {
     padding-top: 17rem;
     padding-bottom: 20rem;
     position: relative;
-    margin: 0 2.5rem 2.5rem 2.5rem;
+    // margin: 0 2.5rem 2.5rem 2.5rem;
     //  background-image: url('../assets/images/svgs/wide-brush.svg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -457,26 +440,20 @@ section {
       .row {
         [class*="col"] {
           .events-list-heading {
-            font-size: 42px;
+            font-size: 47px;
             margin-bottom: 11px;
             position: relative;
             z-index: 7;
-          }
-          .brushstroke {
-            margin-top: -6rem;
-            left: -3rem;
-            width: 100%;
-            height: auto;
-            position: relative;
-            z-index: 6;
-            transform: rotate(359deg);
+            font-family: "IKOB";
+            letter-spacing: -0.75px;
+            color: var(--color-offset)
           }
           .all-events-link {
             display: block;
             @include monospaced();
             padding-left: 0.5rem;
             position: absolute;
-            bottom: 1rem;
+            // bottom: 1rem;
             left: 1rem;
             &:hover {
               // font-style: italic;
@@ -492,9 +469,9 @@ section {
                 min-height: 50px;
                 .event-list-item {
                   padding: 2rem;
-                  border-radius: 0px;
+                  padding-bottom: 2.25rem;
+                  border-radius: 10px;
                   background-color: white;
-                  box-shadow: 0 0 0px 1.25px rgba(0, 0, 0, 0.03);
                   transition: all 0.15s ease;
                   position: relative;
                   overflow: hidden;
@@ -579,9 +556,7 @@ section {
                   }
 
                   &:hover {
-                    box-shadow: 0 0 0 1.25px rgba(0, 0, 0, 0.1),
-                      rgba(0, 0, 0, 0.05) 0px 10px 15px -3px,
-                      rgba(0, 0, 0, 0.025) 0px 4px 6px -2px;
+                    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 6px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px -1px;
                     // box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.025) 0px 4px 6px -2px;
                   }
                   &.includes-register-button {
@@ -714,8 +689,8 @@ section {
           [class*="col"] {
             .events-list-container {
               .events-list-heading {
-                font-size: 37px;
-                text-align: center;
+                font-size: 32px;
+                padding-left: 2px;
               }
             }
           }
@@ -788,7 +763,7 @@ section {
             }
             .events-list-heading {
               font-size: 37px;
-              margin-bottom: 2rem;
+              margin-bottom: 1rem;
             }
             .events-list-container {
               #events-list {
@@ -798,6 +773,9 @@ section {
                       &-home {
                         .event-list-item {
                           padding: 1.5rem;
+                          .event-list-title {
+                            font-size: 19px;
+                          }
                           .event-content-row {
                             .date-side {
                               display: none;
