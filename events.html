@@ -36,6 +36,15 @@
     />
     <link rel="stylesheet preload" href="css/style.css" as="style" />
 
+    <!-- fullCalendar -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+    <!-- fullCalendar initiation (fetching from Sanity)-->
+    <script src="assets/js/calendarBuilder.js"></script>
+    <!-- moment.js - time parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
+    <!-- Sanity data fetch -->
+    <script src="assets/js/fetchData.js"></script>
+
     <!-- header Lit component -->
     <script type="module" src="./lit/header.js"></script>
 
@@ -93,18 +102,75 @@
           >
             At The Golf Club at Deer Chase you will find more than just golf.
             Our banquet room and reception facilities are an elegant way to
-            celebrate your wedding/reception, company outing, family reunion or
-            any other special occasion. We offer catering for up to 150 people
-            for your event.
+            celebrate your
+            <a href="/weddings.html">wedding and/or reception</a>, company
+            outing, family reunion or any other special occasion. We also offer
+            catering for up to 150 people for your event.
           </p>
           <hr
-            style="background: #c9c9c9; opacity: 1"
+            style="background: rgba(0, 0, 0, 0.109); opacity: 1"
             class="wow fadeInUp"
             data-wow-offset="120"
             data-wow-delay="1.3s"
           />
-          << --- calendar goes here --- >>
         </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="calModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
+                <button class="close-button-wrapper" data-bs-dismiss="modal">
+                  <div
+                    type="div"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></div>
+                </button>
+              </div>
+
+              <div class="modal-body-wrapper">
+                <div class="date-wrapper">
+                  <img
+                    src="assets/images/icons/calendar-2.svg"
+                    class="date-icon"
+                    alt=""
+                  /><span class="modal-date"></span
+                  ><span class="modal-date-end"></span>
+                </div>
+                <hr />
+                <div class="modal-body"></div>
+              </div>
+              <div class="modal-footer row d-flex flex-column flex-md-row">
+                <a
+                  href=""
+                  class="btn btn-secondary modal-attachment col"
+                  target="_blank"
+                  >view flyer</a
+                >
+                <a
+                  href=""
+                  class="btn btn-secondary modal-link col"
+                  target="_blank"
+                  >register</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="calendar"
+          class="wow fadeInUp"
+          data-wow-offset="120"
+          data-wow-delay=".75s"
+        ></div>
       </div>
     </section>
 

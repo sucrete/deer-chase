@@ -1338,6 +1338,11 @@ section {
     padding: 12rem 0;
     .title-bar {
       padding-bottom: 3rem;
+      h2 {
+        @media (min-width: 768px) {
+          line-height: .9;
+        }
+      }
       p {
         font-size: 19px;
       }

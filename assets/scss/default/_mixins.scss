@@ -4,3 +4,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin monospaced($color: black) {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: $color;
+  text-transform: uppercase;
+}
+
+@mixin mobile-text-body() {
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+  }
+}

@@ -12923,6 +12923,793 @@ li.has-dropdown:hover .submenu li a {
   color: #fff;
 }
 
+.fc .fc-button {
+  border-radius: 12px;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.262745098);
+}
+
+.fc-event {
+  cursor: pointer;
+  background-color: var(--color-offset);
+  border: none;
+  margin-bottom: 1px !important;
+  transition: all 0.25s ease;
+}
+.fc-event .fc-event-title {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: white;
+  text-transform: uppercase;
+  line-height: unset;
+  letter-spacing: 1px;
+  font-weight: 525;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-overflow: ellipsis;
+}
+.fc-event:hover {
+  background-color: #046322;
+  box-shadow: rgba(4, 99, 34, 0.3) 0px 4px 6px -1px, rgba(4, 99, 34, 0.1) 0px 2px 4px -1px, inset 0 0.5px 2px rgba(255, 255, 255, 0.6274509804);
+}
+
+.fc-daygrid-event {
+  border-radius: 1px;
+}
+
+section.calendar-section {
+  background: rgb(249, 249, 249);
+}
+section.calendar-section .container #calendar .fc-header-toolbar {
+  margin-bottom: 3.5rem;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-toolbar-title {
+  font-size: 47px;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk:last-of-type {
+  display: flex;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk button,
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: black;
+  text-transform: uppercase;
+  background: white;
+  color: black;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk button {
+  border: 1px solid #ddd;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk button:hover {
+  background: #f4f4f4;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk button.fc-today-button {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.0509803922);
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk button.fc-today-button:hover {
+  background: lightyellow;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk button.fc-today-button[disabled] {
+  pointer-events: none;
+  opacity: 0;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group {
+  border-radius: 12px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.0509803922);
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group button:active, section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group button:focus {
+  box-shadow: none;
+}
+section.calendar-section .container #calendar .fc-toolbar-chunk:nth-of-type(2) {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  max-width: 600px;
+}
+section.calendar-section .container #calendar .fc-toolbar-chunk:nth-of-type(2) h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -5px;
+  white-space: nowrap;
+}
+section.calendar-section .container #calendar .fc-toolbar-chunk:nth-of-type(2) button {
+  margin: 0 auto;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table {
+  margin-bottom: 0;
+  border: none;
+  max-width: 100% !important;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table thead th {
+  border: none;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table thead .fc-col-header-cell-cushion {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table tbody tr td[role=presentation] {
+  border: none;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table tbody tr td .fc-daygrid-day-number {
+  text-decoration: none;
+  font-size: 16px;
+  padding-right: 8px;
+  font-weight: 400;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table tbody tr td .fc-day-other {
+  background-color: transparent;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAADxJREFUKFNjZCAOSDESoU6KgYHhGSGFYEUgw/AphCvCpxBFES6FGIqwKcSqCF0hTkXICvEqgikkqAikEACQ/wklBaJ5yQAAAABJRU5ErkJggg==) repeat;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table tbody tr td:not(.fc-day-other) {
+  background: white;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table tbody tr td .fc-day-today {
+  background: lightyellow;
+}
+section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table tbody tr td .fc-day-today .fc-daygrid-day-top .fc-daygrid-day-number {
+  font-weight: 500;
+}
+
+.modal .modal-dialog {
+  max-width: 625px;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: rgba(0, 61, 61, 0.0392156863) 0px 64px 64px -32px, rgba(0, 61, 61, 0.0392156863) 0px 32px 32px -16px, rgba(0, 61, 61, 0.0392156863) 0px 16px 16px -8px, rgba(0, 61, 61, 0.0392156863) 0px 12px 12px -6px, rgba(0, 61, 61, 0.0392156863) 0px 6px 6px -3px, rgba(0, 61, 61, 0.0392156863) 0px 3px 3px -1.5px, rgba(0, 31, 31, 0.0784313725) 0px 1px 1px -0.5px, rgba(0, 61, 61, 0.0392156863) 0px 0px 0px 1px;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  padding: 3rem;
+  padding-bottom: 0.25rem;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-family: "Aeonik Medium";
+  color: rgb(29, 29, 29);
+  font-weight: 550;
+  font-size: 24px;
+  letter-spacing: 0.1px;
+  line-height: 128%;
+  width: 75%;
+  padding-bottom: 0.55rem;
+}
+.modal .modal-dialog .modal-content .modal-header .close-button-wrapper {
+  background-color: #f9f9f9;
+  border-radius: 77px;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.modal .modal-dialog .modal-content .modal-header .close-button-wrapper .btn-close {
+  padding: 0;
+  margin: 0;
+  transition: all 0.15s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal .modal-dialog .modal-content .modal-header .close-button-wrapper:hover .btn-close {
+  color: rgb(29, 29, 29);
+  opacity: 1;
+}
+.modal .modal-dialog .modal-content .modal-body-wrapper {
+  line-height: 140%;
+  font-size: 16px;
+  padding: 3rem;
+  padding-top: 0;
+}
+.modal .modal-dialog .modal-content .modal-body-wrapper .date-wrapper {
+  color: hsla(50, 8%, 45%, 0.836);
+  letter-spacing: 0.2px;
+}
+.modal .modal-dialog .modal-content .modal-body-wrapper .date-wrapper .date-icon {
+  position: relative;
+  width: auto;
+  height: 14px;
+  margin-right: 10px;
+  margin-left: 1.5px;
+  top: -2px;
+}
+.modal .modal-dialog .modal-content .modal-body-wrapper .date-wrapper .date-icon path {
+  fill: var(--color-secondary);
+}
+.modal .modal-dialog .modal-content .modal-body-wrapper hr {
+  background-color: #e7e7e7;
+  margin: 1.75rem 0 1.55rem 0;
+  opacity: 1;
+}
+.modal .modal-dialog .modal-content .modal-body-wrapper .modal-body {
+  padding: 0;
+  color: #767364;
+  letter-spacing: 0.2px;
+  white-space: pre-line;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 3rem;
+  padding-top: 1rem;
+  padding-left: 36px;
+  padding-right: 36px;
+  gap: 5px;
+  border-top-color: transparent;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 1px;
+  background-color: var(--color-offset);
+  padding-bottom: 5px;
+  transition: all 0.25s ease;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn:hover {
+  background-color: #046322;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn:active, .modal .modal-dialog .modal-content .modal-footer .btn:focus {
+  box-shadow: none;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn.modal-attachment {
+  border: 1.5px solid var(--color-offset);
+  background-color: transparent;
+  color: var(--color-offset);
+}
+.modal .modal-dialog .modal-content .modal-footer .btn.modal-attachment:hover {
+  color: white;
+  background-color: var(--color-offset);
+  border-color: var(--color-offset);
+}
+
+.fc-monthList-view {
+  position: relative !important;
+  min-height: 200px;
+}
+.fc-monthList-view .events-list-wrapper {
+  gap: 10px;
+  position: relative;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item {
+  padding: 2.75rem 2.25rem 3rem 2.25rem;
+  background-color: white;
+  transition: all 0.25s ease;
+  position: relative;
+  z-index: 7;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-title {
+  font-family: "Aeonik Medium", sans-serif;
+  color: rgb(29, 29, 29);
+  font-size: 25px;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.1px;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-date-wrapper {
+  color: hsla(50, 8%, 45%, 0.836);
+  letter-spacing: 0.2px;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-date-wrapper .date-icon {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: 14px;
+  margin-right: 10px;
+  margin-left: 1.5px;
+  top: -1px;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-date-wrapper .event-list-date-start,
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-date-wrapper .event-list-date-end {
+  display: inline;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item hr {
+  background-color: #e7e7e7;
+  margin: 1.25rem 0;
+  margin-bottom: 1.1rem;
+  opacity: 1;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-description {
+  padding: 0;
+  color: #767364;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  padding-top: 0.5rem;
+  white-space: pre-line;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer {
+  padding: 2rem 0 0 0;
+  gap: 5px;
+  border-top-color: transparent;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn,
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-link-btn {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  background-color: var(--color-offset);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  padding: 6px 12px 6px 14px;
+  box-shadow: none;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn .button-text,
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-link-btn .button-text {
+  transition: color 0.15s ease;
+  color: white;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn .kinked-arrow,
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-link-btn .kinked-arrow {
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  left: 50px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn:hover,
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-link-btn:hover {
+  background-color: #046322;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn {
+  border: 1.5px solid var(--color-offset);
+  background-color: white;
+  color: var(--color-offset);
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer .event-list-flyer-btn:hover {
+  color: white;
+  background-color: var(--color-offset);
+  border-color: var(--color-offset);
+}
+.fc-monthList-view .events-list-wrapper .event-list-item .event-list-footer.no-buttons {
+  padding: 0;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item:hover {
+  border-color: #ddd;
+  z-index: 77;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 6px -1px, rgba(0, 0, 0, 0.04) 0px 2px 4px -1px;
+}
+.fc-monthList-view .events-list-wrapper .event-list-item-limned {
+  border: 1px solid #e6e6e6;
+}
+.fc-monthList-view .events-list-wrapper-home .event-list-item .event-content-row .content-side .event-list-date-mobile-wrapper {
+  display: none;
+}
+.fc-monthList-view .no-events-message {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: rgb(184, 184, 184);
+  text-transform: uppercase;
+}
+.fc-monthList-view .no-events-message .no-events-icon {
+  height: 12px;
+  width: auto;
+  margin-right: 15px;
+  opacity: 0.23;
+}
+
+section.hours-table, section.course-policies {
+  background-color: #eff4f4;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: 30% 50%;
+  position: relative;
+  padding-top: 17rem;
+  padding-bottom: 20rem;
+  position: relative;
+  margin: 0 2.5rem 2.5rem 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 30%;
+}
+section.hours-table .container, section.course-policies .container {
+  position: relative;
+  z-index: 2;
+}
+section.hours-table .container .row [class*=col] .events-list-heading, section.course-policies .container .row [class*=col] .events-list-heading {
+  font-size: 42px;
+  margin-bottom: 11px;
+  position: relative;
+  z-index: 7;
+}
+section.hours-table .container .row [class*=col] .brushstroke, section.course-policies .container .row [class*=col] .brushstroke {
+  margin-top: -6rem;
+  left: -3rem;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 6;
+  transform: rotate(359deg);
+}
+section.hours-table .container .row [class*=col] .all-events-link, section.course-policies .container .row [class*=col] .all-events-link {
+  display: block;
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: black;
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+section.hours-table .container .row [class*=col] .all-events-link:hover, section.course-policies .container .row [class*=col] .all-events-link:hover {
+  color: #c13d00;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list, section.course-policies .container .row [class*=col] .events-list-container #events-list {
+  padding-bottom: 0rem;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper {
+  gap: 15px;
+  min-height: 50px;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item {
+  padding: 2rem;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 0 0px 1.25px rgba(0, 0, 0, 0.03);
+  transition: all 0.15s ease;
+  position: relative;
+  overflow: hidden;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box {
+  height: 100%;
+  width: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2px;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box > div, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box > div {
+  margin-top: -3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box > div .event-month, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box > div .event-month {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-bottom: 0px;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box > div .event-day, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .date-side .date-box > div .event-day {
+  font-family: "neue-haas-grotesk-text";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 0.75;
+  color: var(--color-primary);
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side {
+  padding: 1.5rem 2rem 2rem 3rem;
+  border-left: 1px dotted rgb(224, 224, 224);
+  width: 100%;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .event-list-title, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .event-list-title {
+  font-size: 21px;
+  padding-bottom: 0.45rem;
+  font-weight: 500;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .event-list-description, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .event-list-description {
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  width: 100%;
+  color: #262626;
+  white-space: pre-line;
+  padding-top: 0;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button {
+  bottom: 0.5rem;
+  right: 3rem;
+  background-color: black;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 6px 12px 6px 14px;
+  box-shadow: none;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button .button-text, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button .button-text {
+  transition: color 0.15s ease;
+  color: white;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button .kinked-arrow, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button .kinked-arrow {
+  position: relative;
+  padding-left: 5px;
+  top: 2px;
+  color: rgba(255, 255, 255, 0.8);
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button:hover, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item .event-content-row .content-side .register-button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item:hover, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item:hover {
+  box-shadow: 0 0 0 1.25px rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) 0px 10px 15px -3px, rgba(0, 0, 0, 0.025) 0px 4px 6px -2px;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item.includes-register-button .event-content-row .content-side, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item.includes-register-button .event-content-row .content-side {
+  padding-bottom: 0.5rem;
+}
+section.hours-table .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item.includes-register-button .event-content-row .content-side .register-button, section.course-policies .container .row [class*=col] .events-list-container #events-list .events-list-wrapper .event-list-item.includes-register-button .event-content-row .content-side .register-button {
+  margin-top: 1.5rem;
+}
+section.hours-table .container .row [class*=col] .events-list-container .all-events-link, section.course-policies .container .row [class*=col] .events-list-container .all-events-link {
+  display: inline-block;
+  padding-left: 0.75rem;
+  padding-top: 0.75rem;
+  padding-right: 1rem;
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-variation-settings: "MONO" 1;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  color: black;
+  text-transform: uppercase;
+  font-size: 13px;
+  opacity: 0.6;
+}
+section.hours-table .container .row [class*=col] .events-list-container .all-events-link:hover, section.course-policies .container .row [class*=col] .events-list-container .all-events-link:hover {
+  opacity: 1;
+}
+section.hours-table .container .row [class*=col] .list-container ul, section.course-policies .container .row [class*=col] .list-container ul {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+section.hours-table .container .row [class*=col] .list-container ul li, section.course-policies .container .row [class*=col] .list-container ul li {
+  font-size: 19px;
+  padding-left: 3rem;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+section.hours-table .container .row [class*=col] .list-container ul li::marker, section.course-policies .container .row [class*=col] .list-container ul li::marker {
+  color: rgb(232, 232, 232);
+}
+section.course-policies {
+  margin: 0;
+  background: transparent;
+  background-image: none;
+}
+section.course-policies-on-course-policies-page {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+section.course-policies-on-course-policies-page:not(:last-of-type) {
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .events-list-heading {
+  font-size: 27px;
+  color: var(--color-primary);
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul,
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #292929;
+  margin-bottom: 0;
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul b,
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container p b {
+  color: #000000;
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul {
+  margin-top: 0;
+  padding-left: 1.9rem;
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul li {
+  font-size: 16px;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  color: #292929;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul li b {
+  color: #000000;
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul li:first-of-type {
+  margin-top: 0;
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul li::marker {
+  color: #292929;
+}
+section.course-policies-on-course-policies-page .container .row [class*=col] .list-container ul li .sublist {
+  list-style-type: "▬";
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  section.hours-table {
+    padding-top: 7rem;
+    padding-bottom: 7.5rem;
+    margin: 0rem;
+  }
+  section.hours-table .container .row [class*=col] .events-list-container .events-list-heading {
+    font-size: 37px;
+    text-align: center;
+  }
+  section.calendar-section {
+    padding-top: 11rem;
+    padding-bottom: 7rem;
+  }
+  section.calendar-section .container #calendar .fc-header-toolbar {
+    position: relative;
+    margin-bottom: 0.9rem;
+  }
+  section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk:nth-of-type(2) {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: -4rem;
+  }
+  section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk:nth-of-type(2) h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+  }
+  section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-prev-button .fc-icon,
+  section.calendar-section .container #calendar .fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-next-button .fc-icon {
+    position: relative;
+    top: -0.75px;
+  }
+  section.calendar-section .container #calendar .fc-view-harness .custom-view .no-events-message {
+    width: 100%;
+    justify-content: center;
+  }
+  section.calendar-section .container #calendar .fc-view-harness .fc-daygrid table thead .fc-col-header-cell-cushion {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  section.calendar-section .fc-event .fc-event-title {
+    line-height: unset;
+  }
+  section.hours-table .container .row [class*=col].shorten-on-mobile {
+    margin-top: 0rem;
+  }
+  section.hours-table .container .row [class*=col] .events-list-heading {
+    font-size: 37px;
+    margin-bottom: 2rem;
+  }
+  section.hours-table .container .row [class*=col] .events-list-container #events-list .fc-view-harness .fc-monthList-view .events-list-wrapper-home .event-list-item {
+    padding: 1.5rem;
+  }
+  section.hours-table .container .row [class*=col] .events-list-container #events-list .fc-view-harness .fc-monthList-view .events-list-wrapper-home .event-list-item .event-content-row .date-side {
+    display: none;
+  }
+  section.hours-table .container .row [class*=col] .events-list-container #events-list .fc-view-harness .fc-monthList-view .events-list-wrapper-home .event-list-item .event-content-row .content-side {
+    border: none;
+    padding: 1rem 1.25rem 1.5rem 1rem;
+  }
+  section.hours-table .container .row [class*=col] .events-list-container #events-list .fc-view-harness .fc-monthList-view .events-list-wrapper-home .event-list-item .event-content-row .content-side .event-list-date-mobile-wrapper {
+    display: flex;
+    font-size: 15px;
+    color: grey;
+  }
+  section.hours-table .container .row [class*=col] .events-list-container #events-list .fc-view-harness .fc-monthList-view .events-list-wrapper-home .event-list-item .event-content-row .content-side .event-list-date-mobile-wrapper .date-icon {
+    width: 12.5px;
+    height: auto;
+    margin-right: 7px;
+    margin-top: -2px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  section.hours-table .container .row [class*=col] .events-list-container #events-list .fc-view-harness .fc-monthList-view .events-list-wrapper-home .event-list-item .event-content-row .content-side .event-list-description {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.hours-table .container .row [class*=col] .events-list-container #events-list .fc-view-harness .fc-monthList-view .events-list-wrapper-home .event-list-item.includes-register-button .event-content-row .content-side {
+    padding-bottom: 1rem;
+  }
+  section.hours-table .container .row [class*=col] .all-events-link-desktop {
+    display: none;
+  }
+  section.hours-table .container .row [class*=col] .all-events-link-mobile {
+    position: relative;
+    margin-top: 3rem;
+    padding-left: 0;
+  }
+  .events-list-wrapper .event-list-item .event-list-date-wrapper {
+    font-size: 15px;
+  }
+  .events-list-wrapper .event-list-item .event-list-description {
+    font-size: 15px;
+    line-height: 150%;
+  }
+  .modal .modal-dialog .modal-content .modal-header {
+    padding: 2rem;
+    padding-bottom: 0.25rem;
+  }
+  .modal .modal-dialog .modal-content .modal-body-wrapper {
+    padding: 2rem;
+    padding-top: 0rem;
+  }
+  .modal .modal-dialog .modal-content .modal-footer {
+    padding: 1rem 2rem 3rem 2rem;
+  }
+  .modal .modal-dialog .modal-content .modal-footer .btn {
+    font-size: 12px;
+    padding: 11px;
+  }
+}
 .rts-btn {
   height: 40px;
   display: flex;
@@ -15756,7 +16543,7 @@ section.cta.blonde .rts-cts-area {
 }
 
 .why-choose-us-faq-area {
-  background: linear-gradient(101.07deg, #F8FAFF 2.25%, #FDF8FF 85.45%);
+  background: linear-gradient(101.07deg, #f8faff 2.25%, #fdf8ff 85.45%);
 }
 
 .why-choose-faq-thumbnail img {
@@ -15781,7 +16568,7 @@ section.cta.blonde .rts-cts-area {
   border: none;
   padding-left: 0;
   padding-right: 0;
-  border-bottom: 1px solid #EAF0FF;
+  border-bottom: 1px solid #eaf0ff;
   padding: 7px 0;
 }
 .faq-why-choose-left-accordion .accordion .accordion-item .accordion-header {
@@ -15790,7 +16577,7 @@ section.cta.blonde .rts-cts-area {
 .faq-why-choose-left-accordion .accordion .accordion-item .accordion-header button {
   background: transparent;
   font-size: 18px;
-  color: #0C1018;
+  color: #0c1018;
   border-bottom: none;
   box-shadow: none;
   padding-left: 0;
@@ -15803,13 +16590,13 @@ section.cta.blonde .rts-cts-area {
 
 .single-pricing-wrapper-choose {
   padding: 29px;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #d1d1d1;
 }
 .single-pricing-wrapper-choose .pricing-head {
   text-align: center;
 }
 .single-pricing-wrapper-choose .pricing-head .pre {
-  background: #F1F1FF;
+  background: #f1f1ff;
   display: block;
   max-width: max-content;
   margin: auto;
@@ -16826,11 +17613,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -16845,11 +17632,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -16864,11 +17651,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -16902,11 +17689,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -16921,47 +17708,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
-  transform: rotate(-3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(8) {
-  z-index: 3;
   transform: rotate(3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(8).leave {
+.slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -16976,11 +17725,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
-.slyde:nth-child(9) {
-  z-index: 2;
+.slyde:nth-child(7) {
+  z-index: 4;
   transform: rotate(0deg) translate(-50%, -50%);
 }
-.slyde:nth-child(9).leave {
+.slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
@@ -16995,13 +17744,51 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(8) {
+  z-index: 3;
+  transform: rotate(-4deg) translate(-50%, -50%);
+}
+.slyde:nth-child(8).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-4deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
+.slyde:nth-child(9) {
+  z-index: 2;
+  transform: rotate(-2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(9).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -18302,6 +19089,11 @@ section.calendar-section {
 }
 section.calendar-section .title-bar {
   padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  section.calendar-section .title-bar h2 {
+    line-height: 0.9;
+  }
 }
 section.calendar-section .title-bar p {
   font-size: 19px;

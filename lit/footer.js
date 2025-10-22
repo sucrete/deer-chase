@@ -27,12 +27,11 @@ export class Footer extends LitElement {
                     <div class="col"></div>
                   </div>
 
-                  <form action="" class="footer-form">
+                  <!-- <form action="" class="footer-form">
                     <div class="single">
                       <p class="mb-4">
                         Join our email list to get exclusive discounts!
                       </p>
-                      <!-- <label for="name">Email</label> -->
                       <div class="that-group">
                         <input
                           type="text"
@@ -44,7 +43,7 @@ export class Footer extends LitElement {
                         <button class="rts-btn btn-primary">Submit</button>
                       </div>
                     </div>
-                  </form>
+                  </form> -->
                   <div class="link-group d-flex flex-row flex-start">
                     <div class="contact-stack">
                       <a
@@ -242,7 +241,7 @@ export class Footer extends LitElement {
                     <a
                       class="teequest-link no-underline"
                       target="_blank"
-                      href="https://www.teequestsolutions.com"
+                      href="https://the-club-at-deer-chase.sanity.studio/"
                     >
                       <svg
                         class="svg-inline--fa fa-gears"
