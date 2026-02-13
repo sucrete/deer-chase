@@ -87,10 +87,10 @@
   --s-extra-bold: 400;
   --s-black: 400;
   --transition: 0.3s;
-  --font-primary: "Aeonik Medium", sans-serif;
-  --font-medium: "Aeonik Medium", sans-serif;
-  --font-secondary: "Aeonik Medium", sans-serif;
-  --font-3: "fontawesome";
+  --font-primary: 'Aeonik Medium', sans-serif;
+  --font-medium: 'Aeonik Medium', sans-serif;
+  --font-secondary: 'Aeonik Medium', sans-serif;
+  --font-3: 'fontawesome';
   --font-size-b1: 16px;
   --font-size-b2: 16px;
   --font-size-b3: 22px;
@@ -13529,12 +13529,12 @@ section.course-policies {
   background: transparent;
   background-image: none;
 }
+section.course-policies-on-course-policies-page:not(:last-of-type) {
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
 section.course-policies-on-course-policies-page {
   padding-top: 12rem;
   padding-bottom: 12rem;
-}
-section.course-policies-on-course-policies-page:not(:last-of-type) {
-  border-bottom: 1px solid rgb(228, 228, 228);
 }
 section.course-policies-on-course-policies-page .container .row [class*=col] .events-list-heading {
   font-size: 27px;
@@ -14853,15 +14853,15 @@ section.cta .rts-cts-area .cta-one-wrapper .right:after {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
-  section.cta .rts-cts-area .cta-one-wrapper .left-area {
-    width: 100%;
-    max-width: 100%;
-    padding: 190px 110px;
-  }
   section.cta .rts-cts-area .cta-one-wrapper .left-area .title {
     line-height: 100%;
     padding-bottom: 1rem;
     font-size: 42px;
+  }
+  section.cta .rts-cts-area .cta-one-wrapper .left-area {
+    width: 100%;
+    max-width: 100%;
+    padding: 190px 110px;
   }
   section.cta .rts-cts-area .cta-one-wrapper .left-area .title, section.cta .rts-cts-area .cta-one-wrapper .left-area p {
     text-align: center;
@@ -15331,16 +15331,20 @@ section.cta.blonde .rts-cts-area {
   justify-content: space-between;
   padding: 6rem 0 0 0;
 }
-.rts-copyright-area-one .copyright-wrapper .teequest-link {
+.rts-copyright-area-one .copyright-wrapper .teequest-link,
+.rts-copyright-area-one .copyright-wrapper .sanity-link {
   transition: all 0.25s ease;
+  text-decoration: none;
 }
-.rts-copyright-area-one .copyright-wrapper .teequest-link .fa-gears {
+.rts-copyright-area-one .copyright-wrapper .teequest-link .fa-gears,
+.rts-copyright-area-one .copyright-wrapper .sanity-link .fa-gears {
   display: inline-block;
   margin-top: -15px;
   width: 20px;
   opacity: 0.65;
 }
-.rts-copyright-area-one .copyright-wrapper .teequest-link:hover {
+.rts-copyright-area-one .copyright-wrapper .teequest-link:hover,
+.rts-copyright-area-one .copyright-wrapper .sanity-link:hover {
   color: rgba(255, 255, 255, 0.65);
 }
 @media only screen and (max-width: 575px) {
@@ -17644,11 +17648,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17682,11 +17686,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17701,11 +17705,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17739,11 +17743,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17758,11 +17762,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17777,11 +17781,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17796,11 +17800,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -18349,8 +18353,11 @@ section.hours-table .container .hours-table-column {
 }
 .short-introduction a:hover {
   transform: translateY(-1px);
+}
+.short-introduction a:hover {
   box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.65) 0px 8px 16px -8px;
 }
+
 a .single-solution-style-one {
   border: none;
   box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
@@ -18533,6 +18540,7 @@ table tbody tr th .note {
   letter-spacing: 0.5px;
   line-height: 120%;
   margin-left: 1px;
+  margin-top: 3px;
   color: #878787;
 }
 table tbody tr th .note .explainer-icon {
@@ -18999,7 +19007,12 @@ section.scorecard {
   padding-bottom: 17rem;
 }
 section.scorecard .container .scorecard-image {
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04)) drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 4px 4px rgba(0, 0, 0, 0.06)) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07)) drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08)) drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
+  transition: all 0.25s ease;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+}
+section.scorecard .container .scorecard-image:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.2));
 }
 
 section.weddings-page-body {
@@ -19295,14 +19308,16 @@ footer .weather-card .weather-heading {
 }
 footer .weather-card .weather-heading .grey-text {
   color: rgba(255, 255, 255, 0.65);
-  display: inline-block;
-  font-family: var(--font-primary);
 }
 footer .weather-card .weather-heading .grey-text .hyphen {
   display: inline-block;
 }
 footer .weather-card .weather-heading .grey-text .break {
   display: none;
+}
+footer .weather-card .weather-heading .grey-text {
+  display: inline-block;
+  font-family: var(--font-primary);
 }
 footer .weather-card .card-body {
   padding: 0;

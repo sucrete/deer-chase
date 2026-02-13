@@ -235,14 +235,19 @@ export class Footer extends LitElement {
                   <div class="copyright-wrapper">
                     <div class="new-row">
                       <p>
-                        © The Golf Club at Deer Chase
-                        ${new Date().getFullYear()}
+                        <a
+                          class="sanity-link"
+                          href="https://the-club-at-deer-chase.sanity.studio/"
+                          target="_blank"
+                        >
+                          © The Golf Club at Deer Chase
+                          ${new Date().getFullYear()}</a
+                        >
                       </p>
                     </div>
                     <a
                       class="teequest-link no-underline"
-                      target="_blank"
-                      href="https://the-club-at-deer-chase.sanity.studio/"
+                      href="javascript:void(0)"
                     >
                       <svg
                         class="svg-inline--fa fa-gears"

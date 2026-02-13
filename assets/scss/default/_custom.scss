@@ -53,7 +53,8 @@
   position: relative;
   z-index: 69;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   .row {
     height: 100%;
@@ -148,7 +149,8 @@ section.hours-table {
   .container {
     .the-table-itself {
       background: white;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
       border-radius: 10px;
       .hours-table-brow {
@@ -283,15 +285,13 @@ section.hours-table {
   --_g: #0000 90deg, var(--c) 0;
   --_p: var(--w) var(--w) border-box no-repeat;
 
-  background: conic-gradient(
-        from 90deg at top var(--b) left var(--b),
-        var(--_g)
-      )
-      0 0 / var(--_p),
-    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100% 0 /
+  background:
+    conic-gradient(from 90deg at top var(--b) left var(--b), var(--_g)) 0 0 /
       var(--_p),
-    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0 100% /
-      var(--_p),
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) 100%
+      0 / var(--_p),
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--_g)) 0
+      100% / var(--_p),
     conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
       100% 100% / var(--_p);
 }
@@ -376,7 +376,8 @@ section.hours-table {
         //   transform: rotate(-45deg) translateX(2.5px);
         // }
       }
-      box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px,
+      box-shadow:
+        rgba(50, 50, 93, 0.5) 0px 13px 27px -5px,
         rgba(0, 0, 0, 0.65) 0px 8px 16px -8px;
     }
   }
@@ -388,10 +389,15 @@ a {
     // border-top: 3px solid rgb(227, 227, 227);
     // border: 1px solid rgba(0, 0, 0, 0.109);
     box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.072);
-    box-shadow: transparent 0px 64px 64px -32px, transparent 0px 32px 32px -16px,
-      transparent 0px 16px 16px -8px, #003d3d0a 0px 12px 12px -6px,
-      #003d3d0a 0px 6px 6px -3px, #003d3d0a 0px 3px 3px -1.5px,
-      #001f1f14 0px 1px 1px -0.5px, #003d3d0a 0px 0px 0px 1px;
+    box-shadow:
+      transparent 0px 64px 64px -32px,
+      transparent 0px 32px 32px -16px,
+      transparent 0px 16px 16px -8px,
+      #003d3d0a 0px 12px 12px -6px,
+      #003d3d0a 0px 6px 6px -3px,
+      #003d3d0a 0px 3px 3px -1.5px,
+      #001f1f14 0px 1px 1px -0.5px,
+      #003d3d0a 0px 0px 0px 1px;
     background: white;
     padding: 0;
     overflow: hidden;
@@ -457,10 +463,15 @@ a {
       background: var(--color-offset);
       transform: translateY(-5px);
       box-shadow: 0px 9px 22px -5px rgba(24, 16, 16, 0.3019607843);
-      box-shadow: #003d3d0a 0px 64px 64px -32px, #003d3d0a 0px 32px 32px -16px,
-        #003d3d0a 0px 16px 16px -8px, #003d3d0a 0px 12px 12px -6px,
-        #003d3d0a 0px 6px 6px -3px, #003d3d0a 0px 3px 3px -1.5px,
-        #001f1f14 0px 1px 1px -0.5px, #003d3d0a 0px 0px 0px 1px;
+      box-shadow:
+        #003d3d0a 0px 64px 64px -32px,
+        #003d3d0a 0px 32px 32px -16px,
+        #003d3d0a 0px 16px 16px -8px,
+        #003d3d0a 0px 12px 12px -6px,
+        #003d3d0a 0px 6px 6px -3px,
+        #003d3d0a 0px 3px 3px -1.5px,
+        #001f1f14 0px 1px 1px -0.5px,
+        #003d3d0a 0px 0px 0px 1px;
       .bottom {
         h4 {
           color: white;
@@ -659,6 +670,7 @@ table {
           letter-spacing: 0.5px;
           line-height: 120%;
           margin-left: 1px;
+          margin-top: 3px;
           color: #878787;
           .explainer-icon {
             width: 11.25px;
@@ -1197,13 +1209,13 @@ section {
     background: #fafafa;
     padding-bottom: 17rem;
     .container {
-      .scorecard-image {
-        filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.04))
-          drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05))
-          drop-shadow(0 4px 4px rgba(0, 0, 0, 0.06))
-          drop-shadow(0 8px 8px rgba(0, 0, 0, 0.07))
-          drop-shadow(0 16px 16px rgba(0, 0, 0, 0.08))
-          drop-shadow(0 32px 32px rgba(0, 0, 0, 0.09));
+      .scorecard-image { 
+        transition: all .25s ease;
+        filter: drop-shadow( 0px 2px 4px rgba(0, 0, 0, 0.2));
+        &:hover {
+          transform: translateY(-2px);
+          filter: drop-shadow( 0px 4px 5px rgba(0, 0, 0, 0.2));
+        }
       }
     }
   }
@@ -1715,7 +1727,7 @@ footer {
       .card-body {
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-bottom: .5rem;
+        padding-bottom: 0.5rem;
         padding-top: 1rem;
         .weather-heading._500 {
           line-height: 106%;
