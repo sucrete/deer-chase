@@ -126,6 +126,10 @@ h3,
 h4 {
   font-family: "IKOB";
   color: var(--color-offset);
+  letter-spacing: -1.5px;
+  @media (max-width: 576px) {
+    letter-spacing: -1px;
+  }
 }
 
 h1,
@@ -157,12 +161,14 @@ h5,
 .h5 {
   font-size: var(--h5);
   line-height: 1.2;
+  letter-spacing: -1.5px;
 }
 
 h6,
 .h6 {
   font-size: var(--h6);
   line-height: 1.2;
+  letter-spacing: -1.5px;
 }
 
 h1,
@@ -292,7 +298,8 @@ p {
   @media #{$sm-layout} {
     margin: 0 0 20px;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.3;
+  
   }
 
   &.b1 {

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,21 +18,21 @@
       href="assets/css/vendor/bootstrap.min.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <link
       rel="stylesheet preload"
       href="assets/css/plugins/fontawesome.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <link
       rel="stylesheet preload"
       href="assets/css/plugins/metismenu.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <link rel="stylesheet preload" href="css/style.css" as="style" />
 
@@ -42,7 +42,7 @@
     <script src="assets/js/listBuilder.js"></script>
     <!-- moment.js - time parsing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.0/moment.min.js"></script>
-      <!-- Sanity data fetch -->
+    <!-- Sanity data fetch -->
     <script src="assets/js/fetchData.js"></script>
 
     <!-- header Lit component -->
@@ -65,10 +65,9 @@
     <div
       class="banner-four-area banner-four-bg rts-section-gap jarallax home-page"
     >
-      <!-- aerial photo of MariMack is quite dark - uncomment with lighter photo -->
       <div class="overlay"></div>
       <div class="slider-wrapper">
-        <div class="slider wow fadeIn" data-wow-delay=".9s">
+        <div class="slider wow fadeIn" data-wow-delay="1.1s">
           <div class="slide">
             <div class="title-wrapper">
               <img
@@ -122,45 +121,91 @@
 
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-md-6">
             <div class="short-introduction">
-              <p
-                class="wow fadeInUp"
-                data-wow-offset="120"
-                data-wow-delay=".6s"
-              >
-                Fall in love with the greatest game ever played at The Golf Club
-                at Deer Chase in Linn Creek, Missouri! We are an 18-hole
-                executive golf course right outside Lake of the Ozarks State
-                Park.
-              </p>
-              <a
-                href="https://www.tripadvisor.com/Attraction_Review-g44606-d4460120-Reviews-The_Golf_Club_at_Deer_Chase-Linn_Creek_Lake_of_the_Ozarks_Missouri.html"
-                target="_blank"
-              >
+              <div class="banner-hours">
+                <div class="p-wrapper">
+                  <p
+                    class="wow fadeInUp"
+                    data-wow-offset="120"
+                    data-wow-delay=".8s"
+                  >
+                    <!-- <img
+                      src="assets/images/fav.svg"
+                      alt=""
+                      class="deer-icon injectable"
+                    /> -->
+                    Fall in love with the greatest game ever played at The Golf
+                    Club at Deer Chase in Linn Creek, Missouri! We are an
+                    18-hole executive golf course right outside Lake of the
+                    Ozarks State Park.
+                  </p>
+                </div>
                 <div
-                  class="trip-advisor-bite wow fadeInUp row"
+                  class="hours-box-wrapper wow fadeInUp"
                   data-wow-offset="120"
-                  data-wow-delay=".8s"
+                  data-wow-delay=".9s"
                 >
-                  <div class="col-9">
-                    <div class="ta-subheading">recommended on</div>
-                    <img
-                      class="trip-advisor-logo"
-                      src="assets/images/logo/trip-advisor-logo.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col col-two">
-                    <img
-                      class="injectable little-right-arrow"
-                      src="assets/images/icons/arrow-small-right.svg"
-                      alt=""
-                    />
+                  <img
+                    src="assets/images/svgs/tab.svg"
+                    alt=""
+                    class="tab-svg injectable d-none d-sm-block"
+                  />
+                  <div class="d-none hours-box d-sm-flex">
+                    <div class="hours-label-side">
+                      <div class="hours-subheading">
+                        <img
+                          class="injectable clock"
+                          src="assets/images/icons/clock-three.svg"
+                          alt=""
+                        />
+                        hours
+                      </div>
+                    </div>
+                    <div class="hours-side">
+                      <div class="hours-row">
+                        <div class="days">Mon</div>
+                        <div class="gap"></div>
+                        <div class="hours">9am - 4pm</div>
+                      </div>
+                      <div class="hours-row">
+                        <div class="days">Tues - Sun</div>
+                        <div class="gap"></div>
+                        <div class="hours">7:30am - 6pm</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <a
+              href="https://www.tripadvisor.com/Attraction_Review-g44606-d4460120-Reviews-The_Golf_Club_at_Deer_Chase-Linn_Creek_Lake_of_the_Ozarks_Missouri.html"
+              target="_blank"
+            >
+              <div
+                class="trip-advisor-bite wow fadeInUp row"
+                data-wow-offset="120"
+                data-wow-delay="1s"
+              >
+                <div class="col-9">
+                  <div class="ta-subheading">recommended on</div>
+                  <img
+                    class="trip-advisor-logo"
+                    src="assets/images/logo/trip-advisor-logo.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col col-two">
+                  <img
+                    class="injectable little-right-arrow"
+                    src="assets/images/icons/arrow-small-right.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -194,26 +239,32 @@
               data-wow-offset="120"
               data-wow-delay=".1s"
             >
-              <div class="hours-table-brow">
-                <div class="table-title-wrapper">
-                  <img class="clock-icon" src="assets/images/icons/clock.svg" />
-                  <h5 class="title">Hours of Operation</h5>
-                </div>
-              </div>
-              <div class="row some-tables">
-                <div class="col-12">
-                  <div class="hours-row">
-                    <div class="days">Monday</div>
-                    <div class="gap"></div>
-                    <div class="hours">9am - 4pm</div>
-                  </div>
-                  <div class="hours-row">
-                    <div class="days">Tuesday - Sunday</div>
-                    <div class="gap"></div>
-                    <div class="hours">7:30am - 6pm</div>
+              <div class="remove-on-desktop">
+                <div class="hours-table-brow">
+                  <div class="table-title-wrapper">
+                    <img
+                      class="clock-icon"
+                      src="assets/images/icons/clock.svg"
+                    />
+                    <h5 class="title">Hours of Operation</h5>
                   </div>
                 </div>
+                <div class="row some-tables">
+                  <div class="col-12">
+                    <div class="hours-row">
+                      <div class="days">Monday</div>
+                      <div class="gap"></div>
+                      <div class="hours">9am - 4pm</div>
+                    </div>
+                    <div class="hours-row">
+                      <div class="days">Tuesday - Sunday</div>
+                      <div class="gap"></div>
+                      <div class="hours">7:30am - 6pm</div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="addendum">
                 <div class="green-sheen">
                   <img
@@ -222,8 +273,9 @@
                     alt=""
                   />
                   <p>
-                    Only open if forecast is projected above 40 degrees for the
-                    majority of the daylight hours.
+                    The Golf Club at Deer Chase will only open if forecast is
+                    projected to be above 40 degrees for the majority of the
+                    daylight hours.
                   </p>
                   <p>
                     For advanced group bookings, e-mail

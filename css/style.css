@@ -223,6 +223,15 @@ h3,
 h4 {
   font-family: "IKOB";
   color: var(--color-offset);
+  letter-spacing: -1.5px;
+}
+@media (max-width: 576px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -1px;
+  }
 }
 
 h1,
@@ -254,12 +263,14 @@ h5,
 .h5 {
   font-size: var(--h5);
   line-height: 1.2;
+  letter-spacing: -1.5px;
 }
 
 h6,
 .h6 {
   font-size: var(--h6);
   line-height: 1.2;
+  letter-spacing: -1.5px;
 }
 
 h1 a,
@@ -374,7 +385,7 @@ p {
   p {
     margin: 0 0 20px;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.3;
   }
 }
 p.b1 {
@@ -14218,7 +14229,7 @@ section.course-policies-on-course-policies-page .container .row [class*=col] .li
 
 .banner-four-bg {
   background-image: url(../images/deer-chase-down-hill.jpg);
-  height: 853px !important;
+  height: 95vh !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14315,8 +14326,194 @@ section.course-policies-on-course-policies-page .container .row [class*=col] .li
   }
 }
 .banner-four-area.home-page .container {
-  z-index: unset;
+  z-index: 7;
   margin-bottom: 1rem;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours {
+  max-width: 450px;
+  height: fit-content;
+  position: relative;
+  border-radius: 1px;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .p-wrapper {
+  padding-bottom: 1.65rem;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .p-wrapper p {
+  font-size: 16px;
+  margin-bottom: 0;
+  text-shadow: 0 0 10px black;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .p-wrapper p .deer-icon {
+  float: left;
+  width: 17px;
+  height: auto;
+  margin-top: 5px;
+  margin-right: 1.25rem;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .p-wrapper p .deer-icon path {
+  fill: rgba(255, 255, 255, 0.62);
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .p-wrapper p .indent {
+  display: inline-block;
+  width: 30px;
+  letter-spacing: -2px;
+  color: rgba(255, 255, 255, 0.276);
+}
+@media screen and (max-width: 576px) {
+  .banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .p-wrapper {
+    border-bottom: none;
+  }
+  .banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .p-wrapper p {
+    font-size: 15px;
+  }
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .tab-svg {
+  height: 17px;
+  width: auto;
+  top: 3px;
+  position: relative;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours .tab-svg path {
+  fill: #0b2e16;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box {
+  padding: 2rem;
+  padding-top: 0.35rem;
+  background: #0b2e16;
+  flex-direction: column;
+  width: 300px;
+}
+@media (max-width: 576px) {
+  .banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box {
+    display: none;
+  }
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-label-side .hours-subheading {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  color: rgba(255, 255, 255, 0.462745098);
+  font-weight: 550;
+  font-variation-settings: "MONO" 1;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  line-height: 115%;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-label-side .hours-subheading .clock {
+  width: 8px;
+  height: auto;
+  margin-right: 3px;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-label-side .hours-subheading .clock path {
+  fill: rgba(255, 255, 255, 0.462745098);
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-side {
+  flex: 1;
+  padding-right: 0.5rem;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-side .hours-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  line-height: 140%;
+  padding-left: 1.5px;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-side .hours-row .days,
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-side .hours-row .hours {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.banner-four-area.home-page .container [class*=col] .short-introduction .banner-hours div.hours-box .hours-side .hours-row .gap {
+  position: relative;
+  flex: 1 1 auto;
+  border-bottom: 1.25px dashed rgba(255, 255, 255, 0.276);
+  top: -7px;
+  margin: 0 10px;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) {
+  display: flex;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a {
+  position: relative;
+  text-decoration: none;
+  width: fit-content;
+  display: inline-block;
+  transition: all 0.15s ease;
+  margin-left: auto;
+  margin-top: auto;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite {
+  background: hsla(0, 0%, 100%, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.537);
+  padding: 1rem 0rem 0.75rem 0.45rem;
+  width: 200px;
+  height: fit-content;
+  position: relative;
+  border-radius: 1px;
+  backdrop-filter: blur(9px);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.577);
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite .ta-subheading {
+  font-family: "Sono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  /* font-style: normal; */
+  font-variation-settings: "MONO" 1;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  margin-left: 2px;
+  color: #ffffff;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+  position: relative;
+  z-index: 3;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite .trip-advisor-logo {
+  height: 22px;
+  width: auto;
+  position: relative;
+  z-index: 2;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite .col-two {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite .col-two .little-right-arrow {
+  transform: rotate(-45deg);
+  height: auto;
+  width: 22px;
+  transition: all 0.2s ease;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite .col-two .little-right-arrow path {
+  fill: #ffffff;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a:visited, .banner-four-area.home-page .container [class*=col]:nth-of-type(2) a:active, .banner-four-area.home-page .container [class*=col]:nth-of-type(2) a:focus {
+  color: #fff;
+}
+.banner-four-area.home-page .container [class*=col]:nth-of-type(2) a:hover {
+  transform: translateY(-1px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.45) 0px 8px 16px -8px;
+}
+@media screen and (max-width: 576px) {
+  .banner-four-area.home-page .container [class*=col]:nth-of-type(2) a {
+    margin-left: 8px;
+    margin-top: unset;
+  }
+  .banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite {
+    padding: 0.5rem 0rem 0.35rem 0rem;
+  }
+  .banner-four-area.home-page .container [class*=col]:nth-of-type(2) a .trip-advisor-bite [class*=col] .ta-subheading {
+    padding-bottom: 0rem;
+    margin-left: 0rem;
+  }
 }
 .banner-four-area.home-page .overlay {
   height: 50%;
@@ -14334,7 +14531,7 @@ section.course-policies-on-course-policies-page .container .row [class*=col] .li
   justify-content: center;
 }
 .banner-subpage .banner-four-wrapper .title {
-  font-size: 70px;
+  font-size: 52px;
   margin-bottom: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.455);
 }
@@ -17629,11 +17826,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17648,11 +17845,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17667,47 +17864,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(3).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(4) {
-  z-index: 7;
-  transform: rotate(3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(4).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(5) {
-  z-index: 6;
   transform: rotate(-4deg) translate(-50%, -50%);
 }
-.slyde:nth-child(5).leave {
+.slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
@@ -17722,13 +17881,51 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(4) {
+  z-index: 7;
+  transform: rotate(-2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(4).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17762,11 +17959,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17781,11 +17978,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17800,11 +17997,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -18217,8 +18414,10 @@ section.hours-table .container .the-table-itself .some-tables [class*=col] .hour
   top: -7px;
   margin: 0 10px;
 }
+section.hours-table .container .the-table-itself .remove-on-desktop {
+  display: none;
+}
 section.hours-table .container .the-table-itself .addendum {
-  border-top: 1.5px solid rgba(0, 0, 0, 0.05);
   padding: 1.25rem;
   line-height: 140%;
 }
@@ -18287,75 +18486,9 @@ section.hours-table .container .hours-table-column {
 }
 .short-introduction p {
   color: white;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 125%;
-  margin-bottom: 2rem;
-  text-shadow: 0 0 12px black;
-}
-.short-introduction a {
-  position: relative;
-  text-decoration-color: #6b6b6b;
-  width: fit-content;
-  display: inline-block;
-  margin-left: 9px;
-  transition: all 0.15s ease;
-}
-.short-introduction a .trip-advisor-bite {
-  background: hsla(0, 0%, 100%, 0.716);
-  border: 1px solid rgba(255, 255, 255, 0.261);
-  padding: 1.25rem 0rem 0.75rem 0.5rem;
-  max-width: 250px;
-  width: 250px;
-  height: fit-content;
-  position: relative;
-  border-radius: 1px;
-  backdrop-filter: blur(9px);
-}
-.short-introduction a .trip-advisor-bite .ta-subheading {
-  font-family: "Sono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 450;
-  /* font-style: normal; */
-  font-variation-settings: "MONO" 1;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  line-height: 120%;
-  margin-left: 2px;
-  color: #6b6b6b;
-  text-transform: uppercase;
-  padding-bottom: 0.15rem;
-  position: relative;
-  z-index: 3;
-}
-.short-introduction a .trip-advisor-bite .trip-advisor-logo {
-  height: 25px;
-  width: auto;
-  position: relative;
-  z-index: 2;
-}
-.short-introduction a .trip-advisor-bite .col-two {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.short-introduction a .trip-advisor-bite .col-two .little-right-arrow {
-  transform: rotate(-45deg);
-  height: auto;
-  width: 27px;
-  transition: all 0.2s ease;
-}
-.short-introduction a .trip-advisor-bite .col-two .little-right-arrow path {
-  fill: #6b6b6b;
-}
-.short-introduction a:visited, .short-introduction a:active, .short-introduction a:focus {
-  color: #6b6b6b;
-  text-decoration-color: #6b6b6b;
-}
-.short-introduction a:hover {
-  transform: translateY(-1px);
-}
-.short-introduction a:hover {
-  box-shadow: rgba(50, 50, 93, 0.5) 0px 13px 27px -5px, rgba(0, 0, 0, 0.65) 0px 8px 16px -8px;
+  margin-bottom: 2.75rem;
 }
 
 a .single-solution-style-one {
@@ -18467,6 +18600,12 @@ header.header--sticky .deer-chase-logo-roman-stacked,
 header.header--sticky .deer-chase-logo-stag {
   display: none;
 }
+header.header--sticky.home .deer-chase-logo-badge {
+  width: 150px;
+  position: relative;
+  top: 27px;
+  margin-top: 0px;
+}
 header.header--sticky.sticky .deer-chase-logo-badge {
   display: none;
 }
@@ -18547,6 +18686,12 @@ table tbody tr th .note .explainer-icon {
   width: 11.25px;
   margin-top: -2.5px;
   margin-left: -4px;
+}
+@media (max-width: 576px) {
+  table tbody tr th .note {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
 }
 table tbody tr td,
 table tbody tr th {
@@ -18834,7 +18979,7 @@ section.perks .container .row [class*=col] .single-solution-style-one:hover {
   border-top: solid 1.5px;
 }
 .membership-page-body .container .row .col .tab-content h3 {
-  font-size: 48px;
+  font-size: 40px;
   position: relative;
   margin-bottom: 0.5rem;
 }
@@ -18865,6 +19010,7 @@ section.terms .container .inner-container h3 {
   color: #6c6c6c;
   margin-bottom: 20px;
   font-size: 26px;
+  letter-spacing: unset;
 }
 section.terms .container .inner-container ul {
   padding-left: 2rem;
@@ -18978,7 +19124,8 @@ section.terms .container .inner-container ul:first-of-type {
   .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h3 {
     font-size: 28px;
     line-height: 1.1;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
   }
 }
 .rates-page-body [class*=table-wrapper] table .th-wrap {
@@ -19008,11 +19155,17 @@ section.scorecard {
 }
 section.scorecard .container .scorecard-image {
   transition: all 0.25s ease;
-  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+  border-radius: 46px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 section.scorecard .container .scorecard-image:hover {
   transform: translateY(-2px);
-  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.2));
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+@media (max-width: 576px) {
+  section.scorecard .container .scorecard-image {
+    border-radius: 14px;
+  }
 }
 
 section.weddings-page-body {
@@ -19052,7 +19205,7 @@ section.weddings-page-body .container .row .col-one {
   justify-content: center;
 }
 section.weddings-page-body .container .row .col-one .center-me h2 {
-  letter-spacing: -1px;
+  letter-spacing: -2px;
 }
 section.weddings-page-body .container .row .col-one .center-me p {
   font-size: 19px;
@@ -19083,6 +19236,7 @@ section.weddings-form-section .container {
 }
 section.weddings-form-section .container .row [class*=col] h3 {
   font-family: "Aeonik";
+  letter-spacing: unset;
 }
 section.weddings-form-section .container .row [class*=col] form label {
   padding-bottom: 5px;
@@ -19127,7 +19281,8 @@ section.calendar-section .title-bar {
   }
 }
 section.calendar-section .title-bar p {
-  font-size: 19px;
+  font-size: 17px;
+  letter-spacing: -0.25px;
 }
 
 .contact-page-body {
@@ -19187,6 +19342,7 @@ section.calendar-section .title-bar p {
 }
 .contact-page-body .contact-area-form-wrapper h2 {
   margin-bottom: 0;
+  letter-spacing: -2px;
 }
 
 footer {
@@ -19549,6 +19705,9 @@ footer .rts-copyright-area-one .new-row p {
     line-height: 100%;
     font-size: 25px;
   }
+  section.hours-table .container .the-table-itself .addendum {
+    border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+  }
   section.hours-table .container .the-table-itself .some-tables [class*=col] {
     padding: 3rem 3.75rem;
   }
@@ -19614,8 +19773,8 @@ footer .rts-copyright-area-one .new-row p {
   }
   header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked {
     display: unset;
-    width: 203px;
-    top: 10px;
+    width: 169px;
+    top: 4px;
     position: relative;
   }
   header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman-stacked path {
@@ -19674,6 +19833,9 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.hours-table .container .row .hours-table-column .the-table-itself .some-tables [class*=col] .hours-row {
     font-size: 15px;
+  }
+  section.hours-table .container .row .hours-table-column .the-table-itself .remove-on-desktop {
+    display: block;
   }
   section.hours-table .container .row .hours-table-column .the-table-itself .addendum .green-sheen {
     padding: 2rem;
@@ -19770,7 +19932,7 @@ footer .rts-copyright-area-one .new-row p {
     line-height: 1.4;
   }
   section.weddings-page-body .container .row [class*=col] .slyder-container {
-    height: 275px;
+    height: 245px;
   }
   section.weddings-page-body .container .row [class*=col] .slyder-container .slyde {
     min-width: 375px;
@@ -19785,7 +19947,7 @@ footer .rts-copyright-area-one .new-row p {
     padding-top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 6rem;
+    padding-bottom: 1rem;
   }
   section.weddings-form-section .container {
     padding: 2rem;

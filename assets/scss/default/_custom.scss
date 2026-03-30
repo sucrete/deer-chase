@@ -211,8 +211,10 @@ section.hours-table {
           }
         }
       }
+      .remove-on-desktop {
+        display: none;
+      }
       .addendum {
-        border-top: 1.5px solid rgba(0, 0, 0, 0.05);
         padding: 1.25rem;
         line-height: 140%;
         .green-sheen {
@@ -304,82 +306,10 @@ section.hours-table {
 
   p {
     color: white;
-    font-size: 19px;
+    font-size: 15px;
     line-height: 125%;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 12px black;
-  }
-  a {
-    position: relative;
-    text-decoration-color: #6b6b6b;
-    width: fit-content;
-    display: inline-block;
-    margin-left: 9px;
-    transition: all 0.15s ease;
-    .trip-advisor-bite {
-      background: hsla(0, 0%, 100%, 0.716);
-      border: 1px solid rgba(255, 255, 255, 0.261);
-      padding: 1.25rem 0rem 0.75rem 0.5rem;
-      max-width: 250px;
-      width: 250px;
-      height: fit-content;
-      position: relative;
-      border-radius: 1px;
-      backdrop-filter: blur(9px);
-      .ta-subheading {
-        font-family: "Sono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 450;
-        /* font-style: normal; */
-        font-variation-settings: "MONO" 1;
-        font-size: 12px;
-        letter-spacing: 0.5px;
-        line-height: 120%;
-        margin-left: 2px;
-        color: #6b6b6b;
-        text-transform: uppercase;
-        padding-bottom: 0.15rem;
-        position: relative;
-        z-index: 3;
-      }
-      .trip-advisor-logo {
-        height: 25px;
-        width: auto;
-        position: relative;
-        z-index: 2;
-      }
-      .col-two {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        .little-right-arrow {
-          transform: rotate(-45deg);
-          height: auto;
-          width: 27px;
-          transition: all 0.2s ease;
-          path {
-            fill: #6b6b6b;
-          }
-        }
-      }
-    }
-    &:visited,
-    &:active,
-    &:focus {
-      color: #6b6b6b;
-      text-decoration-color: #6b6b6b;
-    }
-    &:hover {
-      transform: translateY(-1px);
-      .col-two {
-        // .little-right-arrow {
-        //   transform: rotate(-45deg) translateX(2.5px);
-        // }
-      }
-      box-shadow:
-        rgba(50, 50, 93, 0.5) 0px 13px 27px -5px,
-        rgba(0, 0, 0, 0.65) 0px 8px 16px -8px;
-    }
+    margin-bottom: 2.75rem;
+    // text-shadow: 0 0 12px black;
   }
 }
 //* pdf card
@@ -531,6 +461,14 @@ header {
     .deer-chase-logo-stag {
       display: none;
     }
+    &.home {
+      .deer-chase-logo-badge {
+        width: 150px;
+        position: relative;
+        top: 27px;
+        margin-top: 0px;
+      }
+    }
     &.sticky {
       .deer-chase-logo-badge {
         display: none;
@@ -676,6 +614,10 @@ table {
             width: 11.25px;
             margin-top: -2.5px;
             margin-left: -4px;
+          }
+          @media (max-width: 576px) {
+            font-size: 12px;
+            letter-spacing: 0.5px;
           }
         }
       }
@@ -1016,7 +958,7 @@ section.perks {
             border-top: solid 1.5px;
           }
           h3 {
-            font-size: 48px;
+            font-size: 40px;
             position: relative;
             margin-bottom: 0.5rem;
             // left: 9px;
@@ -1053,6 +995,7 @@ section {
           color: #6c6c6c;
           margin-bottom: 20px;
           font-size: 26px;
+          letter-spacing: unset;
         }
         ul {
           padding-left: 2rem;
@@ -1170,7 +1113,8 @@ section {
           h3 {
             font-size: 28px;
             line-height: 1.1;
-            margin-bottom: 0rem;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
           }
         }
       }
@@ -1209,12 +1153,21 @@ section {
     background: #fafafa;
     padding-bottom: 17rem;
     .container {
-      .scorecard-image { 
-        transition: all .25s ease;
-        filter: drop-shadow( 0px 2px 4px rgba(0, 0, 0, 0.2));
+      .scorecard-image {
+        transition: all 0.25s ease;
+        border-radius: 46px;
+        // filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+        box-shadow:
+          rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         &:hover {
           transform: translateY(-2px);
-          filter: drop-shadow( 0px 4px 5px rgba(0, 0, 0, 0.2));
+          box-shadow:
+            rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+            rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        }
+        @media (max-width: 576px) {
+          border-radius: 14px;
         }
       }
     }
@@ -1264,7 +1217,7 @@ section {
           justify-content: center;
           .center-me {
             h2 {
-              letter-spacing: -1px;
+              letter-spacing: -2px;
             }
             p {
               font-size: 19px;
@@ -1306,6 +1259,7 @@ section.weddings-form-section {
       [class*="col"] {
         h3 {
           font-family: "Aeonik";
+          letter-spacing: unset;
         }
         form {
           label {
@@ -1360,7 +1314,8 @@ section {
         }
       }
       p {
-        font-size: 19px;
+        font-size: 17px;
+        letter-spacing: -0.25px;
       }
     }
   }
@@ -1437,6 +1392,7 @@ section {
   .contact-area-form-wrapper {
     h2 {
       margin-bottom: 0;
+      letter-spacing: -2px;
     }
   }
 }
@@ -1985,6 +1941,9 @@ footer {
             }
           }
         }
+        .addendum {
+          border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+        }
         .some-tables {
           [class*="col"] {
             // &:last-of-type {
@@ -2109,8 +2068,8 @@ footer {
                   }
                   &-roman-stacked {
                     display: unset;
-                    width: 203px;
-                    top: 10px;
+                    width: 169px;
+                    top: 4px;
                     position: relative;
                     path {
                       fill: var(--color-primary);
@@ -2228,6 +2187,9 @@ footer {
                   font-size: 15px;
                 }
               }
+            }
+            .remove-on-desktop {
+              display: block;
             }
             .addendum {
               .green-sheen {
@@ -2392,7 +2354,7 @@ footer {
               }
             }
             .slyder-container {
-              height: 275px;
+              height: 245px;
               .slyde {
                 min-width: 375px;
                 &.square {
@@ -2415,7 +2377,7 @@ footer {
       padding-top: 0;
       padding-left: 1rem;
       padding-right: 1rem;
-      padding-bottom: 6rem;
+      padding-bottom: 1rem;
       .container {
         padding: 2rem;
         padding-bottom: 6.5rem;
