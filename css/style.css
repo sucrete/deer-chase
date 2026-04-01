@@ -1,48 +1,4 @@
 @charset "UTF-8";
-/*=================Scss Indexing=============
-1.variables
-2.typography
-3.spacing
-4.reset
-5.forms
-6.mixins
-7.shortcode
-8.animations
-9.text-animation
-10.sal
-11.header
-12.mobile-menu
-13.button
-14.nav
-15.banner
-16.swiper
-17.funfacts
-18.cta
-19.about
-20.common
-21.service
-22.projects
-23.working-process
-24.blog
-25.blog-details
-26.footer
-27.search-input
-28./side-bar
-29.team
-30.testimonials
-31.faq
-32.pricing
-33.date-picker
-34.time-picker
-35.appoinment
-36.awesome-feedback
-37.contact
-38.pre-loader.scss
-39.back-to-top
-
-/*something broooo
-
-==============================================  */
 /* Default  */
 @import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
 :root {
@@ -17845,11 +17801,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17864,11 +17820,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17883,11 +17839,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17902,11 +17858,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(3deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17921,28 +17877,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(6) {
   z-index: 5;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
   transform: rotate(-2deg) translate(-50%, -50%);
 }
-.slyde:nth-child(7).leave {
+.slyde:nth-child(6).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -17957,11 +17894,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
-.slyde:nth-child(8) {
-  z-index: 3;
+.slyde:nth-child(7) {
+  z-index: 4;
   transform: rotate(3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(8).leave {
+.slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -17976,11 +17913,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
-.slyde:nth-child(9) {
-  z-index: 2;
+.slyde:nth-child(8) {
+  z-index: 3;
   transform: rotate(-4deg) translate(-50%, -50%);
 }
-.slyde:nth-child(9).leave {
+.slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
@@ -17995,13 +17932,32 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(9) {
+  z-index: 2;
+  transform: rotate(-3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(9).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -18232,6 +18188,34 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
     --thumbs-slide-height: 4rem;
   }
 }
+.gallery {
+  padding-bottom: 17rem;
+}
+.gallery figure.media {
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gallery figure.media.equal {
+  position: relative;
+  width: 100%;
+}
+.gallery figure.media.equal-16-10 {
+  padding-bottom: 62.5%;
+}
+.gallery figure.media span {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .gallery {
+    padding-bottom: 7rem;
+  }
+}
+
 .my-hr {
   background-color: #d1d1d1;
   opacity: 1;
@@ -19150,20 +19134,46 @@ section.terms .container .inner-container ul:first-of-type {
 }
 
 section.scorecard {
-  background: #fafafa;
+  background: #f7f7f7;
+  padding-top: 16rem;
   padding-bottom: 17rem;
+  position: relative;
+  background-image: radial-gradient(ellipse 95% 75% at center bottom, hsl(0, 0%, 85%) 0%, hsl(0, 0%, 85.15%) 10.8%, hsl(0, 0%, 85.54%) 20.4%, hsl(0, 0%, 86.13%) 28.9%, hsl(0, 0%, 86.88%) 36.6%, hsl(0, 0%, 87.75%) 43.5%, hsl(0, 0%, 88.69%) 49.7%, hsl(0, 0%, 89.68%) 55.5%, hsl(0, 0%, 90.67%) 60.9%, hsl(0, 0%, 91.63%) 66.1%, hsl(0, 0%, 92.53%) 71.2%, hsl(0, 0%, 93.34%) 76.3%, hsl(0, 0%, 94.02%) 81.6%, hsl(0, 0%, 94.54%) 87.3%, hsl(0, 0%, 94.88%) 93.3%, hsl(0, 0%, 95%) 100%);
 }
-section.scorecard .container .scorecard-image {
+section.scorecard .halftone-grunge {
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/service/halftone-grunge-4.svg");
+  background-size: cover;
+}
+section.scorecard .container {
+  position: relative;
+  z-index: 7;
+}
+section.scorecard .container .row [class*=col] h3 {
+  font-size: 40px;
+  letter-spacing: -1.5px;
+}
+section.scorecard .container .row [class*=col] a .scorecard-image {
   transition: all 0.25s ease;
-  border-radius: 46px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-section.scorecard .container .scorecard-image:hover {
+section.scorecard .container .row [class*=col] a .scorecard-image:hover {
   transform: translateY(-2px);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-@media (max-width: 576px) {
-  section.scorecard .container .scorecard-image {
+@media (max-width: 768px) {
+  section.scorecard {
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+  }
+  section.scorecard .container .row [class*=col] h3 {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+  }
+  section.scorecard .container .row [class*=col] a .scorecard-image {
     border-radius: 14px;
   }
 }
@@ -19343,6 +19353,14 @@ section.calendar-section .title-bar p {
 .contact-page-body .contact-area-form-wrapper h2 {
   margin-bottom: 0;
   letter-spacing: -2px;
+}
+@media (max-width: 576px) {
+  .contact-page-body .contact-area-form-wrapper {
+    padding-top: 10rem;
+  }
+  .contact-page-body .contact-area-form-wrapper h2 {
+    font-size: 38px;
+  }
 }
 
 footer {
@@ -19704,6 +19722,7 @@ footer .rts-copyright-area-one .new-row p {
     padding-top: 0rem;
     line-height: 100%;
     font-size: 25px;
+    letter-spacing: -0.5px;
   }
   section.hours-table .container .the-table-itself .addendum {
     border-top: 1.5px solid rgba(0, 0, 0, 0.05);
@@ -19756,6 +19775,13 @@ footer .rts-copyright-area-one .new-row p {
   .pool-page-body .container .bento-wrapper .notices-wrapper .notices .row [class*=col]:nth-of-type(2), .pool-page-body .container .bento-wrapper .notices-wrapper .notices .row [class*=col]:nth-of-type(3) {
     border-top: 1.5px solid rgba(0, 0, 0, 0.05);
   }
+  .rates-page-body {
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+  }
+  .rates-page-body [class*=table-wrapper] {
+    padding-bottom: 2rem;
+  }
   .rates-page-body [class*=table-wrapper] hr {
     margin-bottom: 2.5rem;
   }
@@ -19765,6 +19791,14 @@ footer .rts-copyright-area-one .new-row p {
   }
   table {
     font-size: 15px;
+  }
+  table thead tr th,
+  table tbody tr th {
+    line-height: 1.1;
+  }
+  table thead tr th .th-wrap,
+  table tbody tr th .th-wrap {
+    line-height: 1.1;
   }
 }
 @media screen and (max-width: 576px) {

@@ -185,9 +185,9 @@
               target="_blank"
             >
               <div
-                class="trip-advisor-bite wow fadeInUp row"
+                class="trip-advisor-bite row wow fadeInUp"
                 data-wow-offset="120"
-                data-wow-delay="1s"
+                data-wow-delay="1.1s"
               >
                 <div class="col-9">
                   <div class="ta-subheading">recommended on</div>
@@ -292,12 +292,130 @@
     </section>
     <!-- table of hours end -->
 
-    <!-- cta area start -->
-    <!-- <section class="cta blonde">
-      <my-cta></my-cta>
-    </section> -->
-
-    <!-- cta area end -->
+    <section
+      class="overflow-hidden gallery"
+      id="skrollrGallery"
+      data-aos="fade-up"
+      data-aos-once="true"
+    >
+      <div class="container gallery-1">
+        <div
+          class="row flex-nowrap align-items-end g-2 g-xl-5 mb-2 mb-xl-5"
+          data-bottom-top="transform: translateX(-25%)"
+          data-top-bottom="transform: translateX(-40%)"
+        >
+          <div class="col-6">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-barn-on-pond.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="
+                  background-image: url('./images/deer-chase-barn-on-pond.jpg');
+                "
+              >
+              </span>
+            </figure>
+          </div>
+          <div class="col-6">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-bridge.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="background-image: url(./images/deer-chase-bridge.jpg)"
+              >
+              </span>
+            </figure>
+          </div>
+          <div class="col-6">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-clubhouse-across-pond.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="
+                  background-image: url(./images/deer-chase-clubhouse-across-pond.jpg);
+                "
+              >
+              </span>
+            </figure>
+          </div>
+          <div class="col-6">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-foggy-morn.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="
+                  background-image: url(./images/deer-chase-foggy-morn.jpg);
+                "
+              >
+              </span>
+            </figure>
+          </div>
+        </div>
+        <div
+          class="row flex-nowrap align-items-start g-2 g-xl-5"
+          data-bottom-top="transform: translateX(-50%)"
+          data-top-bottom="transform: translateX(-35%)"
+        >
+          <div class="col-4">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-old-barn.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="background-image: url(./images/deer-chase-old-barn.jpg)"
+              >
+              </span>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-tee-box.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="background-image: url(./images/deer-chase-tee-box.jpg)"
+              >
+              </span>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-pond.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span style="background-image: url(./images/deer-chase-pond.jpg)">
+              </span>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-on-green.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="background-image: url(./images/deer-chase-on-green.jpg)"
+              >
+              </span>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure
+              class="media equal equal-16-10 media-image"
+              data-bp='{"imgSrc": "./images/deer-chase-clubhouse.jpg" , "parentGalleryClass": "gallery-1" }'
+            >
+              <span
+                style="background-image: url(./images/deer-chase-clubhouse.jpg)"
+              >
+              </span>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <my-footer></my-footer>
@@ -380,10 +498,49 @@
     <script defer src="assets/js/plugins/jquery.js"></script>
     <script defer src="assets/js/vendor/waw.js"></script>
     <script defer src="assets/js/vendor/jarallax.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"
+      integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bigpicture/2.6.4/BigPicture.min.js"
+      integrity="sha512-CXpL2MjPcy0gQI2JrQ9gLqyHvglJsO84dKxYWzoCB7SIRuv8blqz6jyUdZ+8DY7/3fy4lF+0eUyesQOWdbxFhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        skrollr.init({ forceHeight: false, mobileCheck: function () { return false; } });
+
+        document.querySelectorAll("[data-bp]").forEach(function (el) {
+          const data = JSON.parse(el.dataset.bp);
+          el.addEventListener("click", function (e) {
+            const opts = { el: e.currentTarget, noLoader: true };
+            if (data.parentGalleryClass) {
+              const siblings = document.querySelectorAll(
+                "." + data.parentGalleryClass + " [data-bp]"
+              );
+              const gallery = [];
+              siblings.forEach(function (s) {
+                gallery.push({ src: JSON.parse(s.dataset.bp).imgSrc });
+              });
+              opts.gallery = gallery;
+              opts.position = gallery.findIndex(function (g) {
+                return g.src === data.imgSrc;
+              });
+            } else {
+              opts.imgSrc = data.imgSrc;
+            }
+            BigPicture(opts);
+          });
+        });
+      });
+    </script>
     <script defer src="assets/js/plugins/smooth-scroll.js"></script>
     <script defer src="assets/js/plugins/svg-inject.js"></script>
     <script defer src="assets/js/plugins/metismenu.js"></script>
-    <script defer src="assets/js/vendor/contact-form.js"></script>
     <script defer src="assets/js/vendor/bootstrap.min.js"></script>
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>

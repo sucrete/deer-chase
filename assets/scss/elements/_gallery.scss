@@ -1,0 +1,28 @@
+.gallery {
+  padding-bottom: 17rem;
+  figure.media {
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+
+    &.equal {
+      position: relative;
+      width: 100%;
+    }
+
+    &.equal-16-10 {
+      padding-bottom: 62.5%;
+    }
+
+    span {
+      position: absolute;
+      inset: 0;
+      display: block;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 7rem;
+  }
+}
