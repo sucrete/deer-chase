@@ -9,7 +9,7 @@ const calendarQuery =
 
 
 const todaysDate = new Date();
-const futureDate = todaysDate.setMonth(todaysDate.getMonth() + 5);
+const futureDate = todaysDate.setMonth(todaysDate.getMonth() + 8);
 
 document.addEventListener("DOMContentLoaded", function () {
   var cal = document.getElementById("events-list");
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
           segs.length > 0
             ? ` <div class="events-list-wrapper events-list-wrapper-home d-flex flex-column-reverse">
                   ${sortedSegs
-                    .slice(-2) // sets number of events visible on home page
                     .map((seg) => {
                       return `
                   <div class="event-list-item">
@@ -64,17 +63,17 @@ document.addEventListener("DOMContentLoaded", function () {
                          : "no-buttons"
                      }">
                  ${
-                   seg.def.extendedProps?.flyer
+                   seg.def.extendedProps?.flyer?.asset?._ref
                      ? `<a href="${
                          data.images.find(
                            (image) =>
                              image._id ===
                              seg.def.extendedProps.flyer.asset._ref
-                         ).url
+                         )?.url ?? "#"
                        }"
                   class="btn btn-secondary event-list-flyer-btn col-12 col-md-3"
                   target="_blank"
-                  >view flyer</a>` 
+                  >view flyer</a>`
                      : ""
                  }
                  ${
