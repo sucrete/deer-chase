@@ -967,6 +967,20 @@ section.perks {
             padding-left: 4px;
             margin-bottom: 0;
             font-size: 19px;
+            max-width: 600px; // match rates page description width
+            // Breathing room between a description and the table below it
+            &:last-of-type {
+              padding-bottom: 2rem;
+            }
+            // Match rates page description links
+            a {
+              color: var(--body-text);
+              transition: opacity 0.15s ease;
+              text-decoration: underline;
+              &:hover {
+                opacity: 0.8;
+              }
+            }
           }
           .best-annual-rates-table {
             td {
@@ -988,7 +1002,7 @@ section {
       padding: 3.25rem;
       padding-top: 0;
       .inner-container {
-        padding-left: 5rem;
+        padding-left: 3rem;
         border-left: 1.5px solid #e7e7e7;
         h3 {
           font-family: "Aeonik";
@@ -1042,6 +1056,10 @@ section {
         }
         p {
           max-width: 600px;
+          // Breathing room between a description and the table below it
+          &:last-of-type {
+            padding-bottom: 2rem;
+          }
         }
         p,
         .hours-wrapper {

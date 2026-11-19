@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,14 +25,14 @@
       href="assets/css/plugins/fontawesome.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <link
       rel="stylesheet preload"
       href="assets/css/plugins/metismenu.css"
       as="style"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <link rel="stylesheet preload" href="css/style.css" as="style" />
 
@@ -77,7 +77,7 @@
     <!-- rts banner four end -->
 
     <!-- rates section start  -->
-    <section class="perks mobile-padding">
+    <!-- <section class="perks mobile-padding">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-12 col-lg-6">
@@ -151,7 +151,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- rates section end -->
 
     <!-- membership rates section start  -->
@@ -165,6 +165,7 @@
               class="tab-content wow fadeInUp"
               data-wow-offset="120"
               data-wow-delay=".1s"
+              data-sanity-doc="membershipRates"
             >
               <!-- <hr /> -->
               <h3>Membership Rates</h3>
@@ -215,6 +216,7 @@
               class="tab-content wow fadeInUp"
               data-wow-offset="120"
               data-wow-delay=".1s"
+              data-sanity-doc="addOns"
             >
               <hr />
               <h3>Add-ons</h3>
@@ -258,6 +260,10 @@
         <div class="inner-container">
           <h3>Terms</h3>
           <ul>
+            <li>
+              Closed from November to February but members may play on Saturdays
+              during that time.
+            </li>
             <li>Memberships guaranteed March 1st - November 31st.</li>
             <li>
               Memberships inlcude cart and are valid all day Monday - Thursday
@@ -417,6 +423,7 @@
     <script defer src="assets/js/vendor/contact-form.js"></script>
     <script type="module" src="./assets/js/stacked-images.js "></script>
     <script defer src="assets/js/main.js"></script>
+    <script src="./assets/js/sanity-prices.js"></script>
     <script src="./assets/js/weather.js "></script>
     <script src="assets/js/swiper-helper.js"></script>
   </body>
